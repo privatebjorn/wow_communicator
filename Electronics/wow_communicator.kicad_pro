@@ -616,6 +616,10 @@
     [
       "ea4e9145-65ec-4b68-b48a-8fe9ba7ca003",
       "keyboard_matrix"
+    ],
+    [
+      "81e56805-f1f4-482b-8f2c-9e3590731cf0",
+      "power_management"
     ]
   ],
   "text_variables": {}

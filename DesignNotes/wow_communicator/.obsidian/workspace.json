@@ -28,19 +28,19 @@
         "type": "tabs",
         "children": [
           {
-            "id": "44707153f9a4715a",
+            "id": "dfa409f7e0123fbb",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "resources/stm32c011f6.pdf",
-                "page": 64,
+                "file": "resources/pts636.pdf",
+                "page": 1,
                 "left": -20,
-                "top": 563,
-                "zoom": 0.8
+                "top": 796,
+                "zoom": 0.7794117647058824
               },
               "icon": "lucide-file-text",
-              "title": "stm32c011f6"
+              "title": "pts636"
             }
           }
         ]
@@ -208,8 +208,9 @@
   },
   "active": "d40eaa2d4cb54655",
   "lastOpenFiles": [
-    "resources/stm32c011f6.pdf",
+    "resources/pts636.pdf",
     "Keyboard.md",
+    "resources/stm32c011f6.pdf",
     "resources",
     "Welcome.md"
   ]

@@ -1,0 +1,14 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "3255cd8c-9ea1-49ce-a802-bd1bcfda844e")
+	(paper "A4")
+	(title_block
+		(date "2025-07-20")
+		(rev "A0")
+		(company "WebWow")
+		(comment 1 "Bjorn Hropot")
+	)
+	(lib_symbols)
+)

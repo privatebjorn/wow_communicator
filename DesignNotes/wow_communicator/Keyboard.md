@@ -18,3 +18,8 @@ The power supply scheme implemented was as follows
 The NRST pin was pinned out as suggested below: 
 ![[stm32c011f6.pdf#page=64&rect=115,513,537,758&color=yellow]]
 
+## Switch Selection
+The switches selected were the [[pts636.pdf#page=1&selection=13,0,13,13&color=yellow|PTS636 Series]]
+
+## Keyboard Matrix 
+
