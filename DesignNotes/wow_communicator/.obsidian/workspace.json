@@ -11,26 +11,36 @@
             "id": "d40eaa2d4cb54655",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Keyboard.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Keyboard"
             }
           }
         ]
       },
       {
-        "id": "f620817d92a6f8a3",
+        "id": "09cce5174f34c332",
         "type": "tabs",
         "children": [
           {
-            "id": "6ccd5a0e99ccb010",
+            "id": "44707153f9a4715a",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "pdf",
+              "state": {
+                "file": "resources/stm32c011f6.pdf",
+                "page": 64,
+                "left": -20,
+                "top": 563,
+                "zoom": 0.8
+              },
+              "icon": "lucide-file-text",
+              "title": "stm32c011f6"
             }
           }
         ]
@@ -106,6 +116,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Keyboard.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +126,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for Keyboard"
             }
           },
           {
@@ -124,11 +135,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Keyboard.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links"
+              "title": "Outgoing links from Keyboard"
             }
           },
           {
@@ -152,21 +164,31 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Welcome.md",
+                "file": "Keyboard.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Welcome"
+              "title": "Outline of Keyboard"
+            }
+          },
+          {
+            "id": "5bc8d38f7dddae89",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -175,11 +197,20 @@
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "pdf-plus:PDF++: Toggle auto-copy": false,
+      "pdf-plus:PDF++: Toggle auto-focus": false,
+      "pdf-plus:PDF++: Toggle auto-paste": false,
+      "obsidian-kanban:Create new board": false,
+      "omnisearch:Omnisearch": false,
+      "obsidian-git:Open Git source control": false
     }
   },
-  "active": "29b3865e44697276",
+  "active": "d40eaa2d4cb54655",
   "lastOpenFiles": [
+    "resources/stm32c011f6.pdf",
+    "Keyboard.md",
+    "resources",
     "Welcome.md"
   ]
 }

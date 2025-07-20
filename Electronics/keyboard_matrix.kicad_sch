@@ -4,7 +4,206 @@
 	(generator_version "9.0")
 	(uuid "35afdde7-3e8d-4553-996f-e85da46a27c0")
 	(paper "A3")
+	(title_block
+		(title "Keyboard")
+		(date "2025-07-20")
+		(rev "A0")
+		(company "Bjorn Hropot")
+	)
 	(lib_symbols
+		(symbol "Connector:Conn_ARM_SWD_TagConnect_TC2030"
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 2.54 11.43 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_ARM_SWD_TagConnect_TC2030"
+				(at 5.08 8.89 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Connector:Tag-Connect_TC2030-IDC-FP_2x03_P1.27mm_Vertical"
+				(at 0 -17.78 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.tag-connect.com/wp-content/uploads/bsk-pdf-manager/TC2030-CTX_1.pdf"
+				(at 0 -15.24 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Tag-Connect ARM Cortex SWD JTAG connector, 6 pin"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "Cortex Debug Connector ARM SWD JTAG"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "*TC2030*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_ARM_SWD_TagConnect_TC2030_0_0"
+				(pin power_in line
+					(at -2.54 10.16 270)
+					(length 2.54)
+					(name "VCC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -2.54 -10.16 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin open_collector line
+					(at 7.62 5.08 180)
+					(length 2.54)
+					(name "~{RESET}"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "SWCLK"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(alternate "TCK" output line)
+				)
+				(pin bidirectional line
+					(at 7.62 -2.54 180)
+					(length 2.54)
+					(name "SWDIO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(alternate "TMS" bidirectional line)
+				)
+				(pin input line
+					(at 7.62 -5.08 180)
+					(length 2.54)
+					(name "SWO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(alternate "TDO" input line)
+				)
+			)
+			(symbol "Conn_ARM_SWD_TagConnect_TC2030_0_1"
+				(rectangle
+					(start -5.08 7.62)
+					(end 5.08 -7.62)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:C"
 			(pin_numbers
 				(hide yes)
@@ -148,8 +347,8 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U"
-				(at -15.24 21.59 0)
+			(property "Reference" "U1"
+				(at 2.1433 25.4 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -158,7 +357,7 @@
 				)
 			)
 			(property "Value" "STM32C011F6Px"
-				(at 2.54 21.59 0)
+				(at 2.1433 22.86 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -167,7 +366,7 @@
 				)
 			)
 			(property "Footprint" "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm"
-				(at -15.24 -20.32 0)
+				(at 21.59 -26.162 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -176,7 +375,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://www.st.com/resource/en/datasheet/stm32c011f6.pdf"
+			(property "Datasheet" "datsheet/stm32c011f6.pdf"
 				(at 0 0 0)
 				(effects
 					(font
@@ -186,7 +385,7 @@
 				)
 			)
 			(property "Description" "STMicroelectronics Arm Cortex-M0+ MCU, 32KB flash, 6KB RAM, 48 MHz, 2.0-3.6V, 18 GPIO, TSSOP20"
-				(at 0 0 0)
+				(at -0.254 -28.448 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -214,8 +413,8 @@
 			)
 			(symbol "STM32C011F6Px_0_1"
 				(rectangle
-					(start -15.24 -20.32)
-					(end 15.24 20.32)
+					(start -15.24 20.32)
+					(end 15.24 -13.97)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -229,25 +428,34 @@
 				(pin bidirectional line
 					(at -17.78 15.24 0)
 					(length 2.54)
-					(name "PF2"
+					(name "PB7"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "6"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(alternate "RCC_MCO" bidirectional line)
+					(alternate "I2C1_SCL" bidirectional line)
+					(alternate "I2C1_SDA" bidirectional line)
+					(alternate "RTC_REFIN" bidirectional line)
+					(alternate "TIM16_CH1" bidirectional line)
+					(alternate "TIM17_CH1N" bidirectional line)
 					(alternate "TIM1_CH4" bidirectional line)
+					(alternate "TIM3_CH1" bidirectional line)
+					(alternate "TIM3_CH4" bidirectional line)
+					(alternate "USART1_RX" bidirectional line)
+					(alternate "USART2_CTS" bidirectional line)
+					(alternate "USART2_NSS" bidirectional line)
 				)
 				(pin bidirectional line
-					(at -17.78 10.16 0)
+					(at -17.78 12.7 0)
 					(length 2.54)
 					(name "PC14"
 						(effects
@@ -276,7 +484,7 @@
 					(alternate "USART2_RTS" bidirectional line)
 				)
 				(pin bidirectional line
-					(at -17.78 7.62 0)
+					(at -17.78 10.16 0)
 					(length 2.54)
 					(name "PC15"
 						(effects
@@ -298,8 +506,416 @@
 					(alternate "TIM1_ETR" bidirectional line)
 					(alternate "TIM3_CH3" bidirectional line)
 				)
+				(pin power_in line
+					(at -17.78 7.62 0)
+					(length 2.54)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -17.78 5.08 0)
+					(length 2.54)
+					(name "VSS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 				(pin bidirectional line
 					(at -17.78 2.54 0)
+					(length 2.54)
+					(name "PF2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(alternate "RCC_MCO" bidirectional line)
+					(alternate "TIM1_CH4" bidirectional line)
+				)
+				(pin bidirectional line
+					(at -17.78 0 0)
+					(length 2.54)
+					(name "PA0"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(alternate "ADC1_IN0" bidirectional line)
+					(alternate "PWR_WKUP1" bidirectional line)
+					(alternate "TIM16_CH1" bidirectional line)
+					(alternate "TIM1_CH1" bidirectional line)
+					(alternate "USART1_TX" bidirectional line)
+					(alternate "USART2_CTS" bidirectional line)
+					(alternate "USART2_NSS" bidirectional line)
+				)
+				(pin bidirectional line
+					(at -17.78 -2.54 0)
+					(length 2.54)
+					(name "PA1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(alternate "ADC1_IN1" bidirectional line)
+					(alternate "I2C1_SMBA" bidirectional line)
+					(alternate "I2S1_CK" bidirectional line)
+					(alternate "SPI1_SCK" bidirectional line)
+					(alternate "TIM17_CH1" bidirectional line)
+					(alternate "TIM1_CH2" bidirectional line)
+					(alternate "USART1_RX" bidirectional line)
+					(alternate "USART2_CK" bidirectional line)
+					(alternate "USART2_DE" bidirectional line)
+					(alternate "USART2_RTS" bidirectional line)
+				)
+				(pin bidirectional line
+					(at -17.78 -5.08 0)
+					(length 2.54)
+					(name "PA2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(alternate "ADC1_IN2" bidirectional line)
+					(alternate "I2S1_SD" bidirectional line)
+					(alternate "PWR_WKUP4" bidirectional line)
+					(alternate "RCC_LSCO" bidirectional line)
+					(alternate "SPI1_MOSI" bidirectional line)
+					(alternate "TIM16_CH1N" bidirectional line)
+					(alternate "TIM1_CH3" bidirectional line)
+					(alternate "TIM3_ETR" bidirectional line)
+					(alternate "USART2_TX" bidirectional line)
+				)
+				(pin bidirectional line
+					(at -17.78 -7.62 0)
+					(length 2.54)
+					(name "PA3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(alternate "ADC1_IN3" bidirectional line)
+					(alternate "TIM1_CH1N" bidirectional line)
+					(alternate "TIM1_CH4" bidirectional line)
+					(alternate "USART2_RX" bidirectional line)
+				)
+				(pin bidirectional line
+					(at 17.78 15.24 180)
+					(length 2.54)
+					(name "PA4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(alternate "ADC1_IN4" bidirectional line)
+					(alternate "I2S1_WS" bidirectional line)
+					(alternate "PWR_WKUP2" bidirectional line)
+					(alternate "RTC_OUT1" bidirectional line)
+					(alternate "RTC_TS" bidirectional line)
+					(alternate "SPI1_NSS" bidirectional line)
+					(alternate "TIM14_CH1" bidirectional line)
+					(alternate "TIM17_CH1N" bidirectional line)
+					(alternate "TIM1_CH2N" bidirectional line)
+					(alternate "USART2_TX" bidirectional line)
+				)
+				(pin bidirectional line
+					(at 17.78 12.7 180)
+					(length 2.54)
+					(name "PA5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(alternate "ADC1_IN5" bidirectional line)
+					(alternate "I2S1_CK" bidirectional line)
+					(alternate "SPI1_SCK" bidirectional line)
+					(alternate "TIM1_CH1" bidirectional line)
+					(alternate "TIM1_CH3N" bidirectional line)
+					(alternate "USART2_RX" bidirectional line)
+				)
+				(pin bidirectional line
+					(at 17.78 10.16 180)
+					(length 2.54)
+					(name "PA6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(alternate "ADC1_IN6" bidirectional line)
+					(alternate "I2S1_MCK" bidirectional line)
+					(alternate "SPI1_MISO" bidirectional line)
+					(alternate "TIM16_CH1" bidirectional line)
+					(alternate "TIM1_BKIN" bidirectional line)
+					(alternate "TIM3_CH1" bidirectional line)
+				)
+				(pin bidirectional line
+					(at 17.78 7.62 180)
+					(length 2.54)
+					(name "PA7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(alternate "ADC1_IN7" bidirectional line)
+					(alternate "I2S1_SD" bidirectional line)
+					(alternate "SPI1_MOSI" bidirectional line)
+					(alternate "TIM14_CH1" bidirectional line)
+					(alternate "TIM17_CH1" bidirectional line)
+					(alternate "TIM1_CH1N" bidirectional line)
+					(alternate "TIM3_CH2" bidirectional line)
+				)
+				(pin bidirectional line
+					(at 17.78 5.08 180)
+					(length 2.54)
+					(name "PA8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(alternate "ADC1_IN8" bidirectional line)
+					(alternate "I2S1_WS" bidirectional line)
+					(alternate "RCC_MCO" bidirectional line)
+					(alternate "RCC_MCO_2" bidirectional line)
+					(alternate "SPI1_NSS" bidirectional line)
+					(alternate "TIM14_CH1" bidirectional line)
+					(alternate "TIM1_CH1" bidirectional line)
+					(alternate "TIM1_CH2N" bidirectional line)
+					(alternate "TIM1_CH3N" bidirectional line)
+					(alternate "TIM3_CH3" bidirectional line)
+					(alternate "TIM3_CH4" bidirectional line)
+					(alternate "USART1_RX" bidirectional line)
+					(alternate "USART2_TX" bidirectional line)
+				)
+				(pin bidirectional line
+					(at 17.78 2.54 180)
+					(length 2.54)
+					(name "PA9/PA11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "16"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(alternate "ADC1_EXTI11 (PA11)" bidirectional line)
+					(alternate "ADC1_IN11 (PA11)" bidirectional line)
+					(alternate "I2C1_SCL (PA9)" bidirectional line)
+					(alternate "I2S1_MCK (PA11)" bidirectional line)
+					(alternate "PA11" bidirectional line)
+					(alternate "PA9" bidirectional line)
+					(alternate "RCC_MCO (PA9)" bidirectional line)
+					(alternate "SPI1_MISO (PA11)" bidirectional line)
+					(alternate "TIM1_BKIN2 (PA11)" bidirectional line)
+					(alternate "TIM1_CH2 (PA9)" bidirectional line)
+					(alternate "TIM1_CH4 (PA11)" bidirectional line)
+					(alternate "TIM3_ETR (PA9)" bidirectional line)
+					(alternate "USART1_CTS (PA11)" bidirectional line)
+					(alternate "USART1_NSS (PA11)" bidirectional line)
+					(alternate "USART1_TX (PA9)" bidirectional line)
+				)
+				(pin bidirectional line
+					(at 17.78 0 180)
+					(length 2.54)
+					(name "PA10/PA12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "17"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(alternate "ADC1_IN12 (PA12)" bidirectional line)
+					(alternate "I2C1_SDA (PA10)" bidirectional line)
+					(alternate "I2S1_SD (PA12)" bidirectional line)
+					(alternate "I2S_CKIN (PA12)" bidirectional line)
+					(alternate "PA10" bidirectional line)
+					(alternate "PA12" bidirectional line)
+					(alternate "RCC_MCO_2 (PA10)" bidirectional line)
+					(alternate "SPI1_MOSI (PA12)" bidirectional line)
+					(alternate "TIM17_BKIN (PA10)" bidirectional line)
+					(alternate "TIM1_CH3 (PA10)" bidirectional line)
+					(alternate "TIM1_ETR (PA12)" bidirectional line)
+					(alternate "USART1_CK (PA12)" bidirectional line)
+					(alternate "USART1_DE (PA12)" bidirectional line)
+					(alternate "USART1_RTS (PA12)" bidirectional line)
+					(alternate "USART1_RX (PA10)" bidirectional line)
+				)
+				(pin bidirectional line
+					(at 17.78 -2.54 180)
+					(length 2.54)
+					(name "PA13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "18"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(alternate "ADC1_IN13" bidirectional line)
+					(alternate "DEBUG_SWDIO" bidirectional line)
+					(alternate "IR_OUT" bidirectional line)
+					(alternate "TIM3_ETR" bidirectional line)
+					(alternate "USART2_RX" bidirectional line)
+				)
+				(pin bidirectional line
+					(at 17.78 -5.08 180)
+					(length 2.54)
+					(name "PA14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "19"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(alternate "ADC1_IN14" bidirectional line)
+					(alternate "DEBUG_SWCLK" bidirectional line)
+					(alternate "I2S1_WS" bidirectional line)
+					(alternate "RCC_MCO_2" bidirectional line)
+					(alternate "SPI1_NSS" bidirectional line)
+					(alternate "TIM1_CH1" bidirectional line)
+					(alternate "USART1_CK" bidirectional line)
+					(alternate "USART1_DE" bidirectional line)
+					(alternate "USART1_RTS" bidirectional line)
+					(alternate "USART2_RX" bidirectional line)
+					(alternate "USART2_TX" bidirectional line)
+				)
+				(pin bidirectional line
+					(at 17.78 -7.62 180)
 					(length 2.54)
 					(name "PB6"
 						(effects
@@ -338,423 +954,6 @@
 					(alternate "USART1_NSS" bidirectional line)
 					(alternate "USART1_RTS" bidirectional line)
 					(alternate "USART1_TX" bidirectional line)
-				)
-				(pin bidirectional line
-					(at -17.78 0 0)
-					(length 2.54)
-					(name "PB7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(alternate "I2C1_SCL" bidirectional line)
-					(alternate "I2C1_SDA" bidirectional line)
-					(alternate "RTC_REFIN" bidirectional line)
-					(alternate "TIM16_CH1" bidirectional line)
-					(alternate "TIM17_CH1N" bidirectional line)
-					(alternate "TIM1_CH4" bidirectional line)
-					(alternate "TIM3_CH1" bidirectional line)
-					(alternate "TIM3_CH4" bidirectional line)
-					(alternate "USART1_RX" bidirectional line)
-					(alternate "USART2_CTS" bidirectional line)
-					(alternate "USART2_NSS" bidirectional line)
-				)
-				(pin power_in line
-					(at 0 22.86 270)
-					(length 2.54)
-					(name "VDD"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 -22.86 90)
-					(length 2.54)
-					(name "VSS"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 17.78 15.24 180)
-					(length 2.54)
-					(name "PA0"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(alternate "ADC1_IN0" bidirectional line)
-					(alternate "PWR_WKUP1" bidirectional line)
-					(alternate "TIM16_CH1" bidirectional line)
-					(alternate "TIM1_CH1" bidirectional line)
-					(alternate "USART1_TX" bidirectional line)
-					(alternate "USART2_CTS" bidirectional line)
-					(alternate "USART2_NSS" bidirectional line)
-				)
-				(pin bidirectional line
-					(at 17.78 12.7 180)
-					(length 2.54)
-					(name "PA1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(alternate "ADC1_IN1" bidirectional line)
-					(alternate "I2C1_SMBA" bidirectional line)
-					(alternate "I2S1_CK" bidirectional line)
-					(alternate "SPI1_SCK" bidirectional line)
-					(alternate "TIM17_CH1" bidirectional line)
-					(alternate "TIM1_CH2" bidirectional line)
-					(alternate "USART1_RX" bidirectional line)
-					(alternate "USART2_CK" bidirectional line)
-					(alternate "USART2_DE" bidirectional line)
-					(alternate "USART2_RTS" bidirectional line)
-				)
-				(pin bidirectional line
-					(at 17.78 10.16 180)
-					(length 2.54)
-					(name "PA2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "9"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(alternate "ADC1_IN2" bidirectional line)
-					(alternate "I2S1_SD" bidirectional line)
-					(alternate "PWR_WKUP4" bidirectional line)
-					(alternate "RCC_LSCO" bidirectional line)
-					(alternate "SPI1_MOSI" bidirectional line)
-					(alternate "TIM16_CH1N" bidirectional line)
-					(alternate "TIM1_CH3" bidirectional line)
-					(alternate "TIM3_ETR" bidirectional line)
-					(alternate "USART2_TX" bidirectional line)
-				)
-				(pin bidirectional line
-					(at 17.78 7.62 180)
-					(length 2.54)
-					(name "PA3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(alternate "ADC1_IN3" bidirectional line)
-					(alternate "TIM1_CH1N" bidirectional line)
-					(alternate "TIM1_CH4" bidirectional line)
-					(alternate "USART2_RX" bidirectional line)
-				)
-				(pin bidirectional line
-					(at 17.78 5.08 180)
-					(length 2.54)
-					(name "PA4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "11"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(alternate "ADC1_IN4" bidirectional line)
-					(alternate "I2S1_WS" bidirectional line)
-					(alternate "PWR_WKUP2" bidirectional line)
-					(alternate "RTC_OUT1" bidirectional line)
-					(alternate "RTC_TS" bidirectional line)
-					(alternate "SPI1_NSS" bidirectional line)
-					(alternate "TIM14_CH1" bidirectional line)
-					(alternate "TIM17_CH1N" bidirectional line)
-					(alternate "TIM1_CH2N" bidirectional line)
-					(alternate "USART2_TX" bidirectional line)
-				)
-				(pin bidirectional line
-					(at 17.78 2.54 180)
-					(length 2.54)
-					(name "PA5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "12"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(alternate "ADC1_IN5" bidirectional line)
-					(alternate "I2S1_CK" bidirectional line)
-					(alternate "SPI1_SCK" bidirectional line)
-					(alternate "TIM1_CH1" bidirectional line)
-					(alternate "TIM1_CH3N" bidirectional line)
-					(alternate "USART2_RX" bidirectional line)
-				)
-				(pin bidirectional line
-					(at 17.78 0 180)
-					(length 2.54)
-					(name "PA6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "13"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(alternate "ADC1_IN6" bidirectional line)
-					(alternate "I2S1_MCK" bidirectional line)
-					(alternate "SPI1_MISO" bidirectional line)
-					(alternate "TIM16_CH1" bidirectional line)
-					(alternate "TIM1_BKIN" bidirectional line)
-					(alternate "TIM3_CH1" bidirectional line)
-				)
-				(pin bidirectional line
-					(at 17.78 -2.54 180)
-					(length 2.54)
-					(name "PA7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "14"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(alternate "ADC1_IN7" bidirectional line)
-					(alternate "I2S1_SD" bidirectional line)
-					(alternate "SPI1_MOSI" bidirectional line)
-					(alternate "TIM14_CH1" bidirectional line)
-					(alternate "TIM17_CH1" bidirectional line)
-					(alternate "TIM1_CH1N" bidirectional line)
-					(alternate "TIM3_CH2" bidirectional line)
-				)
-				(pin bidirectional line
-					(at 17.78 -5.08 180)
-					(length 2.54)
-					(name "PA8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "15"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(alternate "ADC1_IN8" bidirectional line)
-					(alternate "I2S1_WS" bidirectional line)
-					(alternate "RCC_MCO" bidirectional line)
-					(alternate "RCC_MCO_2" bidirectional line)
-					(alternate "SPI1_NSS" bidirectional line)
-					(alternate "TIM14_CH1" bidirectional line)
-					(alternate "TIM1_CH1" bidirectional line)
-					(alternate "TIM1_CH2N" bidirectional line)
-					(alternate "TIM1_CH3N" bidirectional line)
-					(alternate "TIM3_CH3" bidirectional line)
-					(alternate "TIM3_CH4" bidirectional line)
-					(alternate "USART1_RX" bidirectional line)
-					(alternate "USART2_TX" bidirectional line)
-				)
-				(pin bidirectional line
-					(at 17.78 -7.62 180)
-					(length 2.54)
-					(name "PA9/PA11"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "16"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(alternate "ADC1_EXTI11 (PA11)" bidirectional line)
-					(alternate "ADC1_IN11 (PA11)" bidirectional line)
-					(alternate "I2C1_SCL (PA9)" bidirectional line)
-					(alternate "I2S1_MCK (PA11)" bidirectional line)
-					(alternate "PA11" bidirectional line)
-					(alternate "PA9" bidirectional line)
-					(alternate "RCC_MCO (PA9)" bidirectional line)
-					(alternate "SPI1_MISO (PA11)" bidirectional line)
-					(alternate "TIM1_BKIN2 (PA11)" bidirectional line)
-					(alternate "TIM1_CH2 (PA9)" bidirectional line)
-					(alternate "TIM1_CH4 (PA11)" bidirectional line)
-					(alternate "TIM3_ETR (PA9)" bidirectional line)
-					(alternate "USART1_CTS (PA11)" bidirectional line)
-					(alternate "USART1_NSS (PA11)" bidirectional line)
-					(alternate "USART1_TX (PA9)" bidirectional line)
-				)
-				(pin bidirectional line
-					(at 17.78 -10.16 180)
-					(length 2.54)
-					(name "PA10/PA12"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "17"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(alternate "ADC1_IN12 (PA12)" bidirectional line)
-					(alternate "I2C1_SDA (PA10)" bidirectional line)
-					(alternate "I2S1_SD (PA12)" bidirectional line)
-					(alternate "I2S_CKIN (PA12)" bidirectional line)
-					(alternate "PA10" bidirectional line)
-					(alternate "PA12" bidirectional line)
-					(alternate "RCC_MCO_2 (PA10)" bidirectional line)
-					(alternate "SPI1_MOSI (PA12)" bidirectional line)
-					(alternate "TIM17_BKIN (PA10)" bidirectional line)
-					(alternate "TIM1_CH3 (PA10)" bidirectional line)
-					(alternate "TIM1_ETR (PA12)" bidirectional line)
-					(alternate "USART1_CK (PA12)" bidirectional line)
-					(alternate "USART1_DE (PA12)" bidirectional line)
-					(alternate "USART1_RTS (PA12)" bidirectional line)
-					(alternate "USART1_RX (PA10)" bidirectional line)
-				)
-				(pin bidirectional line
-					(at 17.78 -12.7 180)
-					(length 2.54)
-					(name "PA13"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "18"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(alternate "ADC1_IN13" bidirectional line)
-					(alternate "DEBUG_SWDIO" bidirectional line)
-					(alternate "IR_OUT" bidirectional line)
-					(alternate "TIM3_ETR" bidirectional line)
-					(alternate "USART2_RX" bidirectional line)
-				)
-				(pin bidirectional line
-					(at 17.78 -15.24 180)
-					(length 2.54)
-					(name "PA14"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "19"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(alternate "ADC1_IN14" bidirectional line)
-					(alternate "DEBUG_SWCLK" bidirectional line)
-					(alternate "I2S1_WS" bidirectional line)
-					(alternate "RCC_MCO_2" bidirectional line)
-					(alternate "SPI1_NSS" bidirectional line)
-					(alternate "TIM1_CH1" bidirectional line)
-					(alternate "USART1_CK" bidirectional line)
-					(alternate "USART1_DE" bidirectional line)
-					(alternate "USART1_RTS" bidirectional line)
-					(alternate "USART2_RX" bidirectional line)
-					(alternate "USART2_TX" bidirectional line)
 				)
 			)
 			(embedded_fonts no)
@@ -1123,84 +1322,2976 @@
 		)
 	)
 	(junction
-		(at 43.18 26.67)
+		(at 280.67 182.88)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "1ade60b0-c63f-4fc2-80fd-fc6736c81c23")
+		(uuid "0015a406-126e-4fdb-8f3f-ee32dc6ba592")
+	)
+	(junction
+		(at 334.01 209.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "01ccd7db-7dc3-47c9-b24f-448438801ceb")
+	)
+	(junction
+		(at 294.64 194.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "04c91e12-b031-4e39-b8cc-375daa3d695f")
+	)
+	(junction
+		(at 300.99 231.14)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "070bd4c7-7ab6-4419-84e2-794bdffbe39a")
+	)
+	(junction
+		(at 232.41 162.56)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "077e3705-32fa-4148-bebc-eb612b4d5252")
+	)
+	(junction
+		(at 314.96 162.56)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0adeafc4-959c-486f-85da-7d409ffeaf47")
+	)
+	(junction
+		(at 280.67 231.14)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "17fc0049-66a6-4e52-a8c0-1e7bdd600949")
+	)
+	(junction
+		(at 212.09 162.56)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "18aac5a9-7204-436f-adfd-5628f193ac0f")
+	)
+	(junction
+		(at 314.96 194.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1ef5658b-28a6-40a9-a3b1-e7ad8d541760")
+	)
+	(junction
+		(at 294.64 177.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1fe38519-d2ad-4c54-93c8-82bbe7a7e17e")
+	)
+	(junction
+		(at 274.32 194.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "24b3739c-ca08-437c-81c8-1c736c3e3820")
+	)
+	(junction
+		(at 294.64 209.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "274331d4-9920-41d3-9713-8eb05df221d9")
+	)
+	(junction
+		(at 260.35 199.39)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "27addb9a-434c-4388-a62a-2e615efd9117")
+	)
+	(junction
+		(at 260.35 214.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "28a44969-ba2f-4e19-a457-163ebb75852d")
+	)
+	(junction
+		(at 198.12 214.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2984f3be-0594-4c79-8fd2-a6d0c51b0a04")
+	)
+	(junction
+		(at 300.99 199.39)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2bed28c6-4103-4c7a-ac66-6ea67b7cccec")
+	)
+	(junction
+		(at 300.99 182.88)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3254ca15-386a-4c50-a20c-8fa5f86a567e")
+	)
+	(junction
+		(at 198.12 182.88)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "32b35fbd-e9c9-4289-99d6-aacabf30a256")
+	)
+	(junction
+		(at 260.35 167.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "35a6fe67-84b0-4cc5-9868-7e96bd19b45e")
+	)
+	(junction
+		(at 198.12 167.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "37ae05fc-b8cc-4d19-a669-7a81a23b1678")
+	)
+	(junction
+		(at 294.64 162.56)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3857ebbc-e957-42e4-bbba-eb2d4f6aaea6")
+	)
+	(junction
+		(at 232.41 177.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "39e89d33-06fe-4b85-9087-0f8adc75aa8e")
+	)
+	(junction
+		(at 300.99 167.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3a125da3-b956-422e-bb3f-19bce80c7371")
+	)
+	(junction
+		(at 218.44 152.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4b2b77e1-1e51-4103-877b-8563082c2b76")
+	)
+	(junction
+		(at 198.12 152.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4dd9d178-ff73-46ad-8628-79555082ad54")
+	)
+	(junction
+		(at 254 194.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "52a95e16-d220-4392-a360-18c4d78ab500")
+	)
+	(junction
+		(at 254 162.56)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "563795ab-88c9-40e2-8f05-c3186d24eef3")
+	)
+	(junction
+		(at 232.41 209.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5b561174-91c3-4739-b666-45570a2a5e44")
+	)
+	(junction
+		(at 212.09 146.05)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "609b3a9b-c810-41eb-9663-1e93e0282d70")
+	)
+	(junction
+		(at 218.44 182.88)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "60b4f680-fc7e-4bb2-8c35-2bb2c214dabf")
+	)
+	(junction
+		(at 218.44 199.39)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6292c473-f04c-4249-b2a4-d87c1cfe5d30")
+	)
+	(junction
+		(at 314.96 146.05)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "68f35ab4-2ac2-43cb-bf44-320a5e6601f6")
+	)
+	(junction
+		(at 280.67 199.39)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6a8027c5-b4f4-4f6d-a819-92f870f84d44")
+	)
+	(junction
+		(at 218.44 167.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6f307754-cbf5-496f-9f94-ed585e900570")
+	)
+	(junction
+		(at 232.41 146.05)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "75071376-d6d0-4533-845c-d5f9c91efedb")
+	)
+	(junction
+		(at 198.12 231.14)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "79eb85c1-c00c-4b90-ac0d-22af6511dd19")
+	)
+	(junction
+		(at 314.96 177.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7bd5116b-a442-47ba-a01c-0137161ba918")
+	)
+	(junction
+		(at 198.12 199.39)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7c4dbd12-a715-4559-8210-b6472a36b43c")
+	)
+	(junction
+		(at 218.44 214.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "826656e5-aa5d-4319-a946-1f1666c82bec")
+	)
+	(junction
+		(at 254 209.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "843851e8-9512-493c-a723-274040fa16c2")
+	)
+	(junction
+		(at 280.67 167.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "87fd6755-5cc5-425c-a749-4deadd3b44ed")
+	)
+	(junction
+		(at 274.32 162.56)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "96e3a804-0c63-45c3-917b-53aa103d890a")
+	)
+	(junction
+		(at 260.35 182.88)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9c4b5375-005b-4e18-9634-18dcebd27072")
+	)
+	(junction
+		(at 240.03 182.88)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9db31157-a70b-4ab1-93cb-c08f34da4fde")
+	)
+	(junction
+		(at 274.32 146.05)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9e4b5b84-2025-4858-b72a-12bca1fb04fd")
+	)
+	(junction
+		(at 172.72 40.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9e8c26cd-1c6d-427b-a11f-564d01ad8054")
+	)
+	(junction
+		(at 294.64 146.05)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a0b61666-6b00-4e7e-9955-deb0eafb72c2")
+	)
+	(junction
+		(at 274.32 177.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "aaaf2116-1fbf-4c99-9120-8d7497abc796")
+	)
+	(junction
+		(at 334.01 162.56)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ad0052ee-5faf-4b39-9020-648a124bdfb4")
+	)
+	(junction
+		(at 212.09 177.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ad22d8a8-c5af-413c-9673-820bfb173fc1")
+	)
+	(junction
+		(at 212.09 194.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b4e3fcc5-e4e6-4905-9a5c-df1a89bad694")
+	)
+	(junction
+		(at 212.09 209.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b8a8a81e-3679-4717-a7dc-c432dd46ba7d")
+	)
+	(junction
+		(at 240.03 152.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "be38e0b7-1e45-478a-9f59-44156b06daa3")
+	)
+	(junction
+		(at 280.67 214.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bef72d29-b71b-4105-bbae-f4cea5f7c485")
+	)
+	(junction
+		(at 240.03 167.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bfa6aa6e-fc42-4c4c-a77e-dafc19c1af32")
+	)
+	(junction
+		(at 260.35 152.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c3f35442-c2af-4087-b582-494830a6b110")
+	)
+	(junction
+		(at 280.67 152.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c4f6cc7e-e88d-4043-8002-34f97dc3be53")
+	)
+	(junction
+		(at 300.99 152.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c864f898-21ad-4b54-80c9-226c9d421403")
+	)
+	(junction
+		(at 167.64 40.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ca4a18f1-9919-4f17-a1d8-d5e66178b275")
+	)
+	(junction
+		(at 334.01 194.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cde098a6-0f27-4cac-ab4d-c82b8a707034")
+	)
+	(junction
+		(at 334.01 177.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ce8cb83d-3dd8-4d8e-8302-97889899846a")
+	)
+	(junction
+		(at 300.99 214.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d0d27533-079b-476e-a782-2c402861d56f")
+	)
+	(junction
+		(at 260.35 231.14)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d0fa3df3-704f-4bfe-87b8-5ccbbf7d5d82")
+	)
+	(junction
+		(at 240.03 214.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "db944015-7b95-4bea-9bda-bfe1e48966e3")
+	)
+	(junction
+		(at 254 146.05)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e4794e8d-2d22-48f7-ad6d-05f8b884399b")
+	)
+	(junction
+		(at 218.44 231.14)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e4f4aea6-57f9-4eed-8276-de59f0a6a4c0")
+	)
+	(junction
+		(at 232.41 194.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ea39807e-d134-4098-8813-18589641350d")
+	)
+	(junction
+		(at 274.32 209.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f4671bbf-8962-40a4-bd00-9f2ed0676ef1")
+	)
+	(junction
+		(at 254 177.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f6056324-88b2-4c95-81fe-4cd2ffe77961")
+	)
+	(junction
+		(at 314.96 209.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f663079c-bd32-48ac-9670-83980db496ad")
+	)
+	(junction
+		(at 240.03 231.14)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fb081063-e0e2-4852-ae84-b2672c6ddd03")
+	)
+	(junction
+		(at 240.03 199.39)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fb5d29f4-a783-4524-b900-b3d873176453")
+	)
+	(junction
+		(at 334.01 146.05)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fd49bd7e-722d-445e-ac4e-467f0ffb70b4")
 	)
 	(no_connect
-		(at 46.99 60.96)
-		(uuid "f1ce6803-85c7-44bb-94fb-d4d5e3991baa")
+		(at 68.58 50.8)
+		(uuid "343862fe-58e1-4aa6-879c-0ffb97913738")
 	)
 	(wire
 		(pts
-			(xy 73.66 101.6) (xy 73.66 99.06)
+			(xy 292.1 146.05) (xy 294.64 146.05)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "40f91bba-68ab-4573-bc08-369870ca0df4")
+		(uuid "009016ec-8247-4fd9-9151-9c2a414f7c78")
 	)
 	(wire
 		(pts
-			(xy 43.18 25.4) (xy 43.18 26.67)
+			(xy 167.64 115.57) (xy 212.09 115.57)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4abb077c-ff3c-4695-a3c8-bc70eca6af29")
+		(uuid "00eae782-7bbd-4f46-acf5-32887359235f")
 	)
 	(wire
 		(pts
-			(xy 54.61 26.67) (xy 43.18 26.67)
+			(xy 294.64 209.55) (xy 294.64 226.06)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c46928bf-10dc-49a8-ae12-192876e99206")
+		(uuid "011cb905-8124-4006-90e8-32a180114ddf")
 	)
 	(wire
 		(pts
-			(xy 73.66 52.07) (xy 73.66 53.34)
+			(xy 219.71 194.31) (xy 218.44 194.31)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c93f8374-7014-41ea-a530-74f118687d7b")
+		(uuid "01a778b2-6e15-4bfd-975b-e98f0c052d77")
 	)
 	(wire
 		(pts
-			(xy 43.18 26.67) (xy 43.18 27.94)
+			(xy 280.67 177.8) (xy 280.67 182.88)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d421d29d-6785-41e1-ba5f-598d530c092f")
+		(uuid "01fc01e8-a7fc-4b37-a29c-5c97dcf07e74")
 	)
 	(wire
 		(pts
-			(xy 54.61 27.94) (xy 54.61 26.67)
+			(xy 294.64 177.8) (xy 294.64 194.31)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e0b23eb3-94fa-4e1f-8c3b-080a8965fe31")
+		(uuid "02bab83b-867e-4190-bec0-89eff072cab4")
 	)
 	(wire
 		(pts
-			(xy 46.99 60.96) (xy 55.88 60.96)
+			(xy 292.1 177.8) (xy 294.64 177.8)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e678afe3-ede2-4955-9fd4-7d8127fee71e")
+		(uuid "044b6827-e106-4f61-866e-b66eae984417")
+	)
+	(wire
+		(pts
+			(xy 167.64 38.1) (xy 167.64 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "044ff71a-44c9-4bb7-a74e-8613dff27fa3")
+	)
+	(wire
+		(pts
+			(xy 240.03 194.31) (xy 241.3 194.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0490853c-745c-4885-8694-7e004ee2b301")
+	)
+	(wire
+		(pts
+			(xy 334.01 58.42) (xy 334.01 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "04e15a7c-1e76-4b31-9362-095520fb3ba2")
+	)
+	(wire
+		(pts
+			(xy 157.48 68.58) (xy 157.48 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "04fe7570-e1f3-4435-bbc2-431c7fae75cf")
+	)
+	(wire
+		(pts
+			(xy 152.4 167.64) (xy 198.12 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0620fcaa-ac9d-47b5-97f5-a0a0c1d7c142")
+	)
+	(wire
+		(pts
+			(xy 218.44 214.63) (xy 240.03 214.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "06782c6f-0545-42c1-8d5f-0b52af1f4201")
+	)
+	(wire
+		(pts
+			(xy 314.96 60.96) (xy 314.96 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "07f3a8de-3472-439e-95f9-bdc2f45c71e1")
+	)
+	(wire
+		(pts
+			(xy 280.67 209.55) (xy 281.94 209.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "09470ec2-cdf2-41c5-89e0-7adb2e25f682")
+	)
+	(wire
+		(pts
+			(xy 212.09 194.31) (xy 212.09 209.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "09fa3961-6b90-449a-a19f-074ad587e26e")
+	)
+	(wire
+		(pts
+			(xy 167.64 104.14) (xy 167.64 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0a941536-d1f0-4c21-ac18-6e7aca50a09e")
+	)
+	(wire
+		(pts
+			(xy 334.01 162.56) (xy 334.01 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0ac7e1e7-a01f-4b17-a079-88eda7a261fc")
+	)
+	(wire
+		(pts
+			(xy 320.04 194.31) (xy 321.31 194.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0c16d742-7ece-4e9d-9a03-7e0383afb7b6")
+	)
+	(wire
+		(pts
+			(xy 254 146.05) (xy 254 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "107bdd36-e986-48c1-96d5-4d8690472168")
+	)
+	(wire
+		(pts
+			(xy 271.78 162.56) (xy 274.32 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1253b875-1298-4856-b7dd-66529209c985")
+	)
+	(wire
+		(pts
+			(xy 251.46 162.56) (xy 254 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "154fdd4c-3513-405b-b0e6-1afd29b20e61")
+	)
+	(wire
+		(pts
+			(xy 198.12 214.63) (xy 218.44 214.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1840fb12-a0bc-4fbd-b695-5d553bc3ea4b")
+	)
+	(wire
+		(pts
+			(xy 240.03 182.88) (xy 260.35 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "19397299-1038-4991-a3c8-be6e0a6207d4")
+	)
+	(wire
+		(pts
+			(xy 320.04 177.8) (xy 320.04 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1a5e4fa0-4f52-48d9-8b06-f092aab162b4")
+	)
+	(wire
+		(pts
+			(xy 240.03 231.14) (xy 260.35 231.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1b50e347-6ba6-4fd9-9121-f082a378c513")
+	)
+	(wire
+		(pts
+			(xy 219.71 162.56) (xy 218.44 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1bdfb40d-c099-4304-bcf8-58c3a9ef930a")
+	)
+	(wire
+		(pts
+			(xy 251.46 177.8) (xy 254 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1cf56f5b-8909-40cf-8d05-261fc132058d")
+	)
+	(wire
+		(pts
+			(xy 184.15 41.91) (xy 184.15 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1dbdde7c-decb-4261-a612-ceb4842c1de8")
+	)
+	(wire
+		(pts
+			(xy 209.55 194.31) (xy 212.09 194.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1e70e1c4-e85e-4b7e-9ee8-3386914eb29d")
+	)
+	(wire
+		(pts
+			(xy 281.94 162.56) (xy 280.67 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1fd0dee1-0c51-4442-a054-6c223eff7433")
+	)
+	(wire
+		(pts
+			(xy 254 110.49) (xy 254 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "20d02699-91d3-45c0-82a3-aaf658d2d181")
+	)
+	(wire
+		(pts
+			(xy 280.67 199.39) (xy 300.99 199.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2212aa5a-371a-4ccc-9a50-6f246231b15f")
+	)
+	(wire
+		(pts
+			(xy 320.04 209.55) (xy 321.31 209.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2265eeb0-a70e-4cc4-9668-d28dcabf7f69")
+	)
+	(wire
+		(pts
+			(xy 280.67 182.88) (xy 300.99 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "240127bb-2eda-4e74-aa8b-a174997ed7f7")
+	)
+	(wire
+		(pts
+			(xy 300.99 199.39) (xy 320.04 199.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "26b891c1-02b9-4dcb-9156-ba30ed0e4464")
+	)
+	(wire
+		(pts
+			(xy 218.44 209.55) (xy 218.44 214.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "26f5a490-3cbf-4662-8865-e8b188b75971")
+	)
+	(wire
+		(pts
+			(xy 280.67 162.56) (xy 280.67 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "28627c82-8261-4581-921b-ba04197895fe")
+	)
+	(wire
+		(pts
+			(xy 241.3 162.56) (xy 240.03 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "29e760d3-3fc0-4f7b-9309-a0fe111f716b")
+	)
+	(wire
+		(pts
+			(xy 232.41 194.31) (xy 232.41 209.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2b34048b-8319-43ba-bba7-e732ae500ef6")
+	)
+	(wire
+		(pts
+			(xy 251.46 209.55) (xy 254 209.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2c737447-b490-4bb5-afcd-11601d3427de")
+	)
+	(wire
+		(pts
+			(xy 152.4 104.14) (xy 152.4 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2c8d103b-023d-4f64-87e5-bffc67bc5398")
+	)
+	(wire
+		(pts
+			(xy 280.67 214.63) (xy 300.99 214.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2caf470b-640f-428a-8d3f-8ca2aee6051b")
+	)
+	(wire
+		(pts
+			(xy 300.99 177.8) (xy 300.99 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2d8218d2-33d7-4b7c-8e07-1b47b8a18974")
+	)
+	(wire
+		(pts
+			(xy 157.48 58.42) (xy 134.62 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2eeb1606-2e8a-480c-8bcb-7bd9d35de817")
+	)
+	(wire
+		(pts
+			(xy 331.47 177.8) (xy 334.01 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2f68053d-33a1-4ce5-92f5-b19b2a28bdb4")
+	)
+	(wire
+		(pts
+			(xy 134.62 58.42) (xy 134.62 214.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "300c34ea-093d-43e7-b3b0-d35e6e66fa59")
+	)
+	(wire
+		(pts
+			(xy 232.41 113.03) (xy 232.41 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "30fa2b86-d881-44ee-aea8-27a1d975c165")
+	)
+	(wire
+		(pts
+			(xy 218.44 194.31) (xy 218.44 199.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "32865ffa-a002-497e-a35b-e506e087bea0")
+	)
+	(wire
+		(pts
+			(xy 218.44 199.39) (xy 240.03 199.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "341dd90d-68c1-4d3b-ae0f-f20151583d3b")
+	)
+	(wire
+		(pts
+			(xy 240.03 167.64) (xy 260.35 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "38426596-c95c-49c2-98ea-84be26855b45")
+	)
+	(wire
+		(pts
+			(xy 302.26 146.05) (xy 300.99 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3be5cbef-f08f-4e41-8f75-b9993993f885")
+	)
+	(wire
+		(pts
+			(xy 152.4 68.58) (xy 152.4 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3d8d6364-5cdf-47c9-a7b1-97c1c5ac9d23")
+	)
+	(wire
+		(pts
+			(xy 260.35 209.55) (xy 260.35 214.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3e22cee1-ba5a-4f83-a104-e7b00a8aaf6b")
+	)
+	(wire
+		(pts
+			(xy 198.12 209.55) (xy 198.12 214.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3f6f241d-057b-4194-9375-cf933a0e48fa")
+	)
+	(wire
+		(pts
+			(xy 132.08 55.88) (xy 132.08 231.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3f74387f-521c-4721-a6c2-7d8fd4c4049d")
+	)
+	(wire
+		(pts
+			(xy 240.03 226.06) (xy 241.3 226.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3f96e80b-210f-4abe-b4ab-8812252dd14b")
+	)
+	(wire
+		(pts
+			(xy 261.62 177.8) (xy 260.35 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "416d3e46-c5a5-487b-9f2b-a6365384cc1c")
+	)
+	(wire
+		(pts
+			(xy 312.42 194.31) (xy 314.96 194.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "427a1548-7171-4e6d-ac3b-6b108b510b97")
+	)
+	(wire
+		(pts
+			(xy 175.26 68.58) (xy 175.26 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "42dec203-1a8f-4889-afa0-9163a1b16f22")
+	)
+	(wire
+		(pts
+			(xy 219.71 177.8) (xy 218.44 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "42e62a3e-1e21-4875-a429-f322809a0259")
+	)
+	(wire
+		(pts
+			(xy 300.99 146.05) (xy 300.99 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "430e835b-83be-48d6-8b69-b60624d7df80")
+	)
+	(wire
+		(pts
+			(xy 209.55 209.55) (xy 212.09 209.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "443d05d7-ad04-41a2-af29-c26642d83cc2")
+	)
+	(wire
+		(pts
+			(xy 241.3 177.8) (xy 240.03 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "448261d8-b3e0-48d6-a488-ea4d04e46767")
+	)
+	(wire
+		(pts
+			(xy 254 209.55) (xy 254 226.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "44d3614a-5a98-49e7-a42a-91ab0704a2d5")
+	)
+	(wire
+		(pts
+			(xy 260.35 214.63) (xy 280.67 214.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "44dfbc83-9119-45bd-927b-b182ae28310c")
+	)
+	(wire
+		(pts
+			(xy 331.47 162.56) (xy 334.01 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "45022c7b-d7ea-4f52-8967-d25dc4ec51d0")
+	)
+	(wire
+		(pts
+			(xy 271.78 146.05) (xy 274.32 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "45e38ea5-6265-4795-ab89-adde777fcb9b")
+	)
+	(wire
+		(pts
+			(xy 274.32 209.55) (xy 274.32 226.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "467a96cb-6fa8-479e-98fd-ab9137d20370")
+	)
+	(wire
+		(pts
+			(xy 281.94 146.05) (xy 280.67 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "468577dd-61bb-4061-9661-6204c6b107c5")
+	)
+	(wire
+		(pts
+			(xy 170.18 113.03) (xy 232.41 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4848f171-a715-4bbd-9988-5ff942499316")
+	)
+	(wire
+		(pts
+			(xy 229.87 209.55) (xy 232.41 209.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4aaf3428-9470-4436-83ad-f0727c0ee71d")
+	)
+	(wire
+		(pts
+			(xy 294.64 226.06) (xy 292.1 226.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4b1397c1-8c69-44c0-a7f8-11f6daaceeed")
+	)
+	(wire
+		(pts
+			(xy 82.55 45.72) (xy 68.58 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4f9765f4-407e-4eaf-bdc7-3db1d3c28134")
+	)
+	(wire
+		(pts
+			(xy 312.42 162.56) (xy 314.96 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4fb65675-e61d-4326-a761-c9c9dc508c6b")
+	)
+	(wire
+		(pts
+			(xy 314.96 177.8) (xy 314.96 194.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "50219274-1960-442e-86de-fe108e36021f")
+	)
+	(wire
+		(pts
+			(xy 218.44 162.56) (xy 218.44 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "51b08bd9-af7c-4a56-9c25-60d5b70bf9a2")
+	)
+	(wire
+		(pts
+			(xy 331.47 146.05) (xy 334.01 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "525b5c54-93d9-4d41-8b78-46c96a14244a")
+	)
+	(wire
+		(pts
+			(xy 274.32 226.06) (xy 271.78 226.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "528f8d54-9cee-479b-819c-84ae7cf84288")
+	)
+	(wire
+		(pts
+			(xy 132.08 231.14) (xy 198.12 231.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "53160e93-a993-448f-8f3c-bd470ad7afd4")
+	)
+	(wire
+		(pts
+			(xy 280.67 146.05) (xy 280.67 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "57b530c7-5a28-4138-9fbe-dbc19a7dc0e9")
+	)
+	(wire
+		(pts
+			(xy 294.64 194.31) (xy 294.64 209.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "58333831-0538-4fa6-aa85-50ea2433349b")
+	)
+	(wire
+		(pts
+			(xy 229.87 162.56) (xy 232.41 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5b0c0856-5c30-45fd-b683-51bdc6912082")
+	)
+	(wire
+		(pts
+			(xy 139.7 182.88) (xy 198.12 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5c647933-c522-4c71-9754-0311753a1382")
+	)
+	(wire
+		(pts
+			(xy 260.35 194.31) (xy 261.62 194.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5df1e85c-bc08-45a8-8a7e-ec7e38ef7610")
+	)
+	(wire
+		(pts
+			(xy 199.39 162.56) (xy 198.12 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "631a2aa7-ff20-4f90-9dc7-d910abf190c5")
+	)
+	(wire
+		(pts
+			(xy 320.04 162.56) (xy 320.04 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6405d78a-ebfd-480c-bdcb-140adb6c012f")
+	)
+	(wire
+		(pts
+			(xy 240.03 226.06) (xy 240.03 231.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "64431d50-ef9d-4ae3-a820-f4f033b8d271")
+	)
+	(wire
+		(pts
+			(xy 198.12 194.31) (xy 199.39 194.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "647876d7-e23a-4862-8729-e11d46adb8ce")
+	)
+	(wire
+		(pts
+			(xy 321.31 177.8) (xy 320.04 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6493776b-b470-4179-be32-31187c542d87")
+	)
+	(wire
+		(pts
+			(xy 300.99 194.31) (xy 302.26 194.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "64de8834-e9bf-4aaf-828f-98b39f13302c")
+	)
+	(wire
+		(pts
+			(xy 167.64 40.64) (xy 167.64 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "64f5ea0a-56ba-4912-a078-15df32b4f5a4")
+	)
+	(wire
+		(pts
+			(xy 167.64 40.64) (xy 172.72 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "676855d3-b999-4652-83ad-7e9139658138")
+	)
+	(wire
+		(pts
+			(xy 320.04 226.06) (xy 321.31 226.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "683c1086-dcc5-4947-b1d4-bb12e8b6823c")
+	)
+	(wire
+		(pts
+			(xy 280.67 209.55) (xy 280.67 214.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "69112379-6427-43a5-890f-cace131df5f8")
+	)
+	(wire
+		(pts
+			(xy 199.39 146.05) (xy 198.12 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6a11a05f-f0eb-4f25-bf9f-edb9c8f11e5b")
+	)
+	(wire
+		(pts
+			(xy 300.99 209.55) (xy 302.26 209.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6b855601-2b30-4cf4-8761-c32a72273b7b")
+	)
+	(wire
+		(pts
+			(xy 254 177.8) (xy 254 194.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6bf05076-2c6e-4b84-b671-94f3ee22692a")
+	)
+	(wire
+		(pts
+			(xy 172.72 60.96) (xy 314.96 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6d11b5e4-98ee-4670-af42-5b3509a039f4")
+	)
+	(wire
+		(pts
+			(xy 300.99 209.55) (xy 300.99 214.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "70c68624-1f62-4255-8f01-075faf5f3b5a")
+	)
+	(wire
+		(pts
+			(xy 260.35 146.05) (xy 260.35 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "70e00aa8-f314-41db-8f49-30a8e1c7d7c9")
+	)
+	(wire
+		(pts
+			(xy 260.35 194.31) (xy 260.35 199.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7361d37d-03b8-450b-b3bd-beae08675180")
+	)
+	(wire
+		(pts
+			(xy 300.99 194.31) (xy 300.99 199.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "736774f9-bc47-431d-9a1a-6e2bfbbfde87")
+	)
+	(wire
+		(pts
+			(xy 232.41 177.8) (xy 232.41 194.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "751c1134-cca0-4fd8-b5fc-7eaa59624981")
+	)
+	(wire
+		(pts
+			(xy 198.12 226.06) (xy 198.12 231.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7854349f-1226-4888-9760-52ba04870690")
+	)
+	(wire
+		(pts
+			(xy 219.71 226.06) (xy 218.44 226.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7a841e9e-24e9-49f3-aa0f-4850c1f8af64")
+	)
+	(wire
+		(pts
+			(xy 175.26 104.14) (xy 175.26 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7ad52301-4bdd-45cd-ae63-beaefcf95c49")
+	)
+	(wire
+		(pts
+			(xy 209.55 177.8) (xy 212.09 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7cc37dc7-551a-46d1-adb7-96b7dcdc1a12")
+	)
+	(wire
+		(pts
+			(xy 280.67 152.4) (xy 300.99 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7cf23fa5-2307-4f2b-a11e-99d80dd9431e")
+	)
+	(wire
+		(pts
+			(xy 302.26 177.8) (xy 300.99 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7ecb93df-2241-4bce-8df1-9699a031873b")
+	)
+	(wire
+		(pts
+			(xy 300.99 152.4) (xy 320.04 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7ed716f9-8ee8-4f59-b321-e42e25029dd0")
+	)
+	(wire
+		(pts
+			(xy 240.03 209.55) (xy 240.03 214.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7eea310d-b915-4ce0-81ca-4565a89667ba")
+	)
+	(wire
+		(pts
+			(xy 280.67 226.06) (xy 281.94 226.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7f01dc7d-3796-43e2-b9eb-069ab500af33")
+	)
+	(wire
+		(pts
+			(xy 240.03 152.4) (xy 260.35 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7f067708-ceca-45a4-971a-8dbc19b66362")
+	)
+	(wire
+		(pts
+			(xy 334.01 146.05) (xy 334.01 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7fa48f89-ab54-426e-85db-721cce5905f0")
+	)
+	(wire
+		(pts
+			(xy 218.44 177.8) (xy 218.44 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "80096346-e2cb-47fb-bfd1-bb782b9efb31")
+	)
+	(wire
+		(pts
+			(xy 294.64 162.56) (xy 294.64 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "810cdf48-b20e-466a-89df-91862ccb32f9")
+	)
+	(wire
+		(pts
+			(xy 198.12 177.8) (xy 198.12 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "81303a9e-4360-4887-bd08-52904a3153c9")
+	)
+	(wire
+		(pts
+			(xy 280.67 226.06) (xy 280.67 231.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "81a519df-f36e-4d83-b931-44e3d4fb2053")
+	)
+	(wire
+		(pts
+			(xy 209.55 146.05) (xy 212.09 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "823c1a14-2343-44bc-8a3b-3509e1aeafdc")
+	)
+	(wire
+		(pts
+			(xy 274.32 107.95) (xy 274.32 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "82b337c8-eda0-4c9a-ba28-04a4cb24e1a0")
+	)
+	(wire
+		(pts
+			(xy 172.72 68.58) (xy 172.72 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "83477833-67d3-4d0b-93a8-ccb6d5afbf64")
+	)
+	(wire
+		(pts
+			(xy 229.87 146.05) (xy 232.41 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "83eaeeab-6be0-47c8-828b-a64363b86dba")
+	)
+	(wire
+		(pts
+			(xy 320.04 209.55) (xy 320.04 214.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "840acc99-9f4a-4a1b-b2c0-1d603f122338")
+	)
+	(wire
+		(pts
+			(xy 139.7 63.5) (xy 139.7 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "84424696-e817-44a5-9128-84e5c7974fff")
+	)
+	(wire
+		(pts
+			(xy 232.41 162.56) (xy 232.41 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "86b551d5-1134-4d28-b085-6035045ecb61")
+	)
+	(wire
+		(pts
+			(xy 280.67 231.14) (xy 300.99 231.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "86cf91e4-1744-42ac-9675-a1938ed713ea")
+	)
+	(wire
+		(pts
+			(xy 170.18 58.42) (xy 334.01 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "871c6236-f2b3-4db7-b10b-ee4b0feb8a33")
+	)
+	(wire
+		(pts
+			(xy 162.56 40.64) (xy 162.56 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "89c4bf2b-f536-4b9c-9229-897fc5372c3d")
+	)
+	(wire
+		(pts
+			(xy 274.32 194.31) (xy 274.32 209.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8a5ab94e-fa3e-4437-98cc-9cd06966d625")
+	)
+	(wire
+		(pts
+			(xy 320.04 226.06) (xy 320.04 231.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8b1f61da-79fb-479a-818f-d411dd05a2db")
+	)
+	(wire
+		(pts
+			(xy 260.35 231.14) (xy 280.67 231.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8b7143e3-4a35-4529-9818-8b1a99d7dbd8")
+	)
+	(wire
+		(pts
+			(xy 320.04 146.05) (xy 320.04 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c2bb221-f71e-4e59-9f3a-98e1200b0f8b")
+	)
+	(wire
+		(pts
+			(xy 260.35 177.8) (xy 260.35 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8d104fa3-5951-4001-bb03-bf7e02d9b943")
+	)
+	(wire
+		(pts
+			(xy 160.02 55.88) (xy 132.08 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8d49939e-beec-4326-9055-9f5ca3921664")
+	)
+	(wire
+		(pts
+			(xy 321.31 162.56) (xy 320.04 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8e08a4f2-2f19-4140-9322-c782097ea2b7")
+	)
+	(wire
+		(pts
+			(xy 240.03 209.55) (xy 241.3 209.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8f46a0e4-975e-491d-b03a-618462696760")
+	)
+	(wire
+		(pts
+			(xy 175.26 107.95) (xy 274.32 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "921fba94-9952-46ca-83e5-d534b125cb80")
+	)
+	(wire
+		(pts
+			(xy 198.12 167.64) (xy 218.44 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "92eee180-aac2-4234-a05f-d0047030746f")
+	)
+	(wire
+		(pts
+			(xy 260.35 226.06) (xy 261.62 226.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "937670fa-1f26-45f4-bc51-f6ba313756ee")
+	)
+	(wire
+		(pts
+			(xy 165.1 104.14) (xy 165.1 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "96d7d879-379b-488a-a20f-f1350bc1b66d")
+	)
+	(wire
+		(pts
+			(xy 218.44 182.88) (xy 240.03 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "970812bb-3245-409f-974c-047b142c6e7a")
+	)
+	(wire
+		(pts
+			(xy 232.41 209.55) (xy 232.41 226.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9769c381-8861-4ef2-8281-866de447dc63")
+	)
+	(wire
+		(pts
+			(xy 154.94 60.96) (xy 137.16 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "97f53802-39a8-4e57-ba25-b5c3e708e335")
+	)
+	(wire
+		(pts
+			(xy 240.03 214.63) (xy 260.35 214.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "990e2ae4-ddda-45e9-abd5-3d9764b4fe59")
+	)
+	(wire
+		(pts
+			(xy 232.41 146.05) (xy 232.41 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9ae23fd5-8f93-43e1-94bc-66a3d30154f0")
+	)
+	(wire
+		(pts
+			(xy 314.96 194.31) (xy 314.96 209.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9b48a908-d2e1-45c5-a4f1-7357f1433101")
+	)
+	(wire
+		(pts
+			(xy 165.1 152.4) (xy 198.12 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9b7a0667-59ef-4b26-88c8-211266b8e79a")
+	)
+	(wire
+		(pts
+			(xy 254 226.06) (xy 251.46 226.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9ba70723-4182-45fb-82c3-94c2de2c2e01")
+	)
+	(wire
+		(pts
+			(xy 280.67 194.31) (xy 280.67 199.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9debabea-022e-49eb-ae8c-c86c7f5f49fe")
+	)
+	(wire
+		(pts
+			(xy 274.32 177.8) (xy 274.32 194.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9ec3e00c-ec7b-42d9-9360-c30ca5a3cccb")
+	)
+	(wire
+		(pts
+			(xy 198.12 146.05) (xy 198.12 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a15c93ed-4bb3-4c06-b532-41ad118cb853")
+	)
+	(wire
+		(pts
+			(xy 280.67 167.64) (xy 300.99 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a3c3cf7e-d167-40f4-a1ca-ef63c29fe4d3")
+	)
+	(wire
+		(pts
+			(xy 240.03 162.56) (xy 240.03 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a42962ac-6376-407c-b9c7-ccc29b867deb")
+	)
+	(wire
+		(pts
+			(xy 260.35 152.4) (xy 280.67 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a65732b2-6f1b-4b3b-9822-53f3eefe7a65")
+	)
+	(wire
+		(pts
+			(xy 302.26 162.56) (xy 300.99 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ae159170-0f8c-4ab4-a47c-520ba269ddab")
+	)
+	(wire
+		(pts
+			(xy 154.94 120.65) (xy 154.94 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ae53c660-779c-42f1-9212-75a656cf986d")
+	)
+	(wire
+		(pts
+			(xy 300.99 226.06) (xy 302.26 226.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ae7e48e3-1c63-4636-820b-55e0f949b2ee")
+	)
+	(wire
+		(pts
+			(xy 209.55 162.56) (xy 212.09 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b047b2e9-ec70-421b-a55f-ca1f6ae5365c")
+	)
+	(wire
+		(pts
+			(xy 170.18 68.58) (xy 170.18 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b141ba49-bcb6-4f5b-83b0-facf99b3d29b")
+	)
+	(wire
+		(pts
+			(xy 260.35 162.56) (xy 260.35 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b2123083-d928-48ab-a35e-cc6a6693615b")
+	)
+	(wire
+		(pts
+			(xy 292.1 194.31) (xy 294.64 194.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b3e62ae0-71f7-4de5-b3cb-31b8f762f54e")
+	)
+	(wire
+		(pts
+			(xy 219.71 209.55) (xy 218.44 209.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b3f56798-5b20-439b-9b2d-abaa7656455f")
+	)
+	(wire
+		(pts
+			(xy 134.62 214.63) (xy 198.12 214.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b46c98e6-460a-4f41-be10-6eb188f47a70")
+	)
+	(wire
+		(pts
+			(xy 260.35 182.88) (xy 280.67 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b52b5f75-0369-4af7-9ad4-a937618168f9")
+	)
+	(wire
+		(pts
+			(xy 300.99 182.88) (xy 320.04 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b5c26cbf-5adc-466c-9fee-c2743487f406")
+	)
+	(wire
+		(pts
+			(xy 212.09 146.05) (xy 212.09 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b8698245-017a-49cd-93ec-5ebccb569c58")
+	)
+	(wire
+		(pts
+			(xy 294.64 146.05) (xy 294.64 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b9421118-d200-442e-99dc-bde528ad3713")
+	)
+	(wire
+		(pts
+			(xy 137.16 199.39) (xy 198.12 199.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b9afb93c-30e8-407b-aea8-3a05d71a33a3")
+	)
+	(wire
+		(pts
+			(xy 260.35 199.39) (xy 280.67 199.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ba05975b-5fae-49c0-aa6b-b60e02a2fdd8")
+	)
+	(wire
+		(pts
+			(xy 300.99 226.06) (xy 300.99 231.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ba7f0eaa-4309-4af3-90dc-b01d9044b959")
+	)
+	(wire
+		(pts
+			(xy 218.44 152.4) (xy 240.03 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bcfc55c1-844d-47c4-be5a-034c26c1fcdf")
+	)
+	(wire
+		(pts
+			(xy 154.94 68.58) (xy 154.94 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bd1af24b-f122-41b2-9948-c96e5877bf77")
+	)
+	(wire
+		(pts
+			(xy 321.31 146.05) (xy 320.04 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "beb6858d-5121-41c3-83f7-875b74404ab8")
+	)
+	(wire
+		(pts
+			(xy 218.44 226.06) (xy 218.44 231.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "beef39c5-120a-4cfd-8ad2-aba495577626")
+	)
+	(wire
+		(pts
+			(xy 300.99 231.14) (xy 320.04 231.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bf1cd922-b032-40eb-ae17-3b4320c71f12")
+	)
+	(wire
+		(pts
+			(xy 240.03 194.31) (xy 240.03 199.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bf736993-ce7e-43d5-b3a3-b87eb4ad9466")
+	)
+	(wire
+		(pts
+			(xy 212.09 162.56) (xy 212.09 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bf8b33d1-b1ad-4373-8ed0-4a8c5a47d939")
+	)
+	(wire
+		(pts
+			(xy 292.1 209.55) (xy 294.64 209.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c006bed9-e962-4010-96bf-6ac09b394123")
+	)
+	(wire
+		(pts
+			(xy 198.12 152.4) (xy 218.44 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c09c0a9e-f859-4d9a-a6e7-ab31202300f3")
+	)
+	(wire
+		(pts
+			(xy 312.42 146.05) (xy 314.96 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c11a98b1-e34a-4cdc-bf20-9c859c4cb02c")
+	)
+	(wire
+		(pts
+			(xy 312.42 209.55) (xy 314.96 209.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c12c9cfd-1833-4dd8-99e6-8a563ec2686f")
+	)
+	(wire
+		(pts
+			(xy 198.12 199.39) (xy 218.44 199.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c1868af8-9ee6-4664-986f-178d412f4bd9")
+	)
+	(wire
+		(pts
+			(xy 334.01 226.06) (xy 331.47 226.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c1e29350-2ffb-4e04-bbf2-a55763d51f70")
+	)
+	(wire
+		(pts
+			(xy 199.39 177.8) (xy 198.12 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c287ec54-000c-4453-b73f-dd9fd386591a")
+	)
+	(wire
+		(pts
+			(xy 212.09 209.55) (xy 212.09 226.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c2c87db7-d403-414f-aa06-0e69bad8f0ab")
+	)
+	(wire
+		(pts
+			(xy 331.47 194.31) (xy 334.01 194.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c2e1ff1b-00d3-4fa3-a4a8-342efeebddee")
+	)
+	(wire
+		(pts
+			(xy 274.32 162.56) (xy 274.32 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c3b39b9f-b046-4948-9345-cc81c593dd7c")
+	)
+	(wire
+		(pts
+			(xy 300.99 214.63) (xy 320.04 214.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c74989ad-60d4-4aa8-9fe7-35aa9e3bcd42")
+	)
+	(wire
+		(pts
+			(xy 198.12 162.56) (xy 198.12 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c762f85b-bbc9-4e66-b1c1-0af340767b61")
+	)
+	(wire
+		(pts
+			(xy 157.48 120.65) (xy 157.48 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cad2451c-6952-4e69-8534-e997c61725bc")
+	)
+	(wire
+		(pts
+			(xy 271.78 209.55) (xy 274.32 209.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cc3a4914-c0fb-4492-9a2f-da11be552b69")
+	)
+	(wire
+		(pts
+			(xy 240.03 146.05) (xy 240.03 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cce0e382-bd34-428c-a497-c388276817fb")
+	)
+	(wire
+		(pts
+			(xy 119.38 40.64) (xy 162.56 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cd67618d-e2d5-4e68-8f47-971de83dc2ed")
+	)
+	(wire
+		(pts
+			(xy 229.87 194.31) (xy 232.41 194.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ce0d070d-80bf-4604-998b-8e898215d771")
+	)
+	(wire
+		(pts
+			(xy 160.02 68.58) (xy 160.02 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ce25e138-81e2-4eb7-a027-2b2db9e7fc20")
+	)
+	(wire
+		(pts
+			(xy 260.35 209.55) (xy 261.62 209.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cfd09b44-0603-48cf-8b9a-c8d47e4ccb31")
+	)
+	(wire
+		(pts
+			(xy 260.35 167.64) (xy 280.67 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d395c013-c744-4625-aa6d-512080189063")
+	)
+	(wire
+		(pts
+			(xy 198.12 226.06) (xy 199.39 226.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d3e5e397-9f3b-46d2-a149-5f542bbae96f")
+	)
+	(wire
+		(pts
+			(xy 314.96 162.56) (xy 314.96 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d52a4c2a-767f-4f18-b2d9-231d112c44bc")
+	)
+	(wire
+		(pts
+			(xy 212.09 226.06) (xy 209.55 226.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d5a284ce-70d7-485b-a0e4-fadeb0d172fe")
+	)
+	(wire
+		(pts
+			(xy 218.44 167.64) (xy 240.03 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d6c97109-340d-4708-ac8e-0d3d4daa77aa")
+	)
+	(wire
+		(pts
+			(xy 251.46 194.31) (xy 254 194.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d6db3e62-4f8e-405c-8af4-20c0ee8e1285")
+	)
+	(wire
+		(pts
+			(xy 280.67 194.31) (xy 281.94 194.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d778e6b2-f74b-49d1-8e50-ac25433109ef")
+	)
+	(wire
+		(pts
+			(xy 261.62 162.56) (xy 260.35 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d7fa2b79-0d90-4ce2-9ef2-2e5e89f91d2c")
+	)
+	(wire
+		(pts
+			(xy 198.12 209.55) (xy 199.39 209.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d81f5e56-2376-41c9-95f7-e68c02dd225f")
+	)
+	(wire
+		(pts
+			(xy 260.35 226.06) (xy 260.35 231.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d85de33a-bd3f-45e9-91a2-08ed7176e468")
+	)
+	(wire
+		(pts
+			(xy 152.4 63.5) (xy 139.7 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d8a2d117-009c-4df0-9d8e-90336d64b5b2")
+	)
+	(wire
+		(pts
+			(xy 274.32 146.05) (xy 274.32 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d9385975-573d-4cbf-b5b6-fd12a346f3b3")
+	)
+	(wire
+		(pts
+			(xy 212.09 115.57) (xy 212.09 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d9c5112a-9bd8-4b5a-af97-b45afa032fb8")
+	)
+	(wire
+		(pts
+			(xy 198.12 231.14) (xy 218.44 231.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "da51f41c-2abe-41f7-8d0e-45bbb2c72a83")
+	)
+	(wire
+		(pts
+			(xy 294.64 63.5) (xy 294.64 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dabc22a2-cd3c-46ad-b791-d0e8da9cf2bb")
+	)
+	(wire
+		(pts
+			(xy 314.96 146.05) (xy 314.96 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dac1cdd2-abd9-4616-8452-94cc2a7a34b4")
+	)
+	(wire
+		(pts
+			(xy 184.15 40.64) (xy 172.72 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dbe440f0-385c-4ca6-b93a-8fe93fda5a6a")
+	)
+	(wire
+		(pts
+			(xy 212.09 177.8) (xy 212.09 194.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "defc16ed-a603-4520-8fd0-2f5389f55531")
+	)
+	(wire
+		(pts
+			(xy 254 194.31) (xy 254 209.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "df31d973-d375-4ffe-932b-2e5d3f2ea5a9")
+	)
+	(wire
+		(pts
+			(xy 198.12 194.31) (xy 198.12 199.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "df99b218-f7e1-49ce-b44b-49308b1831cb")
+	)
+	(wire
+		(pts
+			(xy 300.99 167.64) (xy 320.04 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dff80863-f5f7-424f-b193-70da02e38d29")
+	)
+	(wire
+		(pts
+			(xy 281.94 177.8) (xy 280.67 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e00d8ef2-810b-4f26-a82d-745d31038b97")
+	)
+	(wire
+		(pts
+			(xy 334.01 177.8) (xy 334.01 194.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e16b30eb-7309-4a96-8d17-7e24e233171f")
+	)
+	(wire
+		(pts
+			(xy 82.55 48.26) (xy 68.58 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e2ebfda4-faec-47bd-b02a-a9f1387226f4")
+	)
+	(wire
+		(pts
+			(xy 312.42 177.8) (xy 314.96 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e4fc06b7-87fb-4b8d-8e47-3d7ba97c63d0")
+	)
+	(wire
+		(pts
+			(xy 292.1 162.56) (xy 294.64 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e59a6c1a-fddd-4a24-8552-20962a76b5f8")
+	)
+	(wire
+		(pts
+			(xy 334.01 194.31) (xy 334.01 209.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e6844978-223f-4735-b83c-48efaa21d130")
+	)
+	(wire
+		(pts
+			(xy 198.12 182.88) (xy 218.44 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e692f9f5-c46b-44f5-bc1e-3c16cd26df59")
+	)
+	(wire
+		(pts
+			(xy 175.26 63.5) (xy 294.64 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e7a0641f-712a-4547-9700-7a16cb7b1ab0")
+	)
+	(wire
+		(pts
+			(xy 172.72 40.64) (xy 172.72 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e887b239-9504-4d43-9dde-3be70c1bfe84")
+	)
+	(wire
+		(pts
+			(xy 251.46 146.05) (xy 254 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eaac9903-98eb-4807-8ef1-033dd0a6a2e8")
+	)
+	(wire
+		(pts
+			(xy 172.72 104.14) (xy 172.72 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eca5b3bf-73b2-4689-bd5a-dd9fd000cbb2")
+	)
+	(wire
+		(pts
+			(xy 232.41 226.06) (xy 229.87 226.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ed1b0c3c-c181-4e83-b83c-13dd7d96a4d4")
+	)
+	(wire
+		(pts
+			(xy 219.71 146.05) (xy 218.44 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ed370358-a299-455d-ae82-4b98792db4df")
+	)
+	(wire
+		(pts
+			(xy 82.55 40.64) (xy 68.58 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ed500e30-672b-4bf4-a6f9-0bf9f2dc3c15")
+	)
+	(wire
+		(pts
+			(xy 241.3 146.05) (xy 240.03 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "edf16c23-c793-46b3-b029-2b77dea1e3b4")
+	)
+	(wire
+		(pts
+			(xy 320.04 194.31) (xy 320.04 199.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ef28f58a-9e32-4676-8fb2-86aa644c7c60")
+	)
+	(wire
+		(pts
+			(xy 331.47 209.55) (xy 334.01 209.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "efb9bf5a-7fa5-4a0a-8f44-1fb3c2f023ec")
+	)
+	(wire
+		(pts
+			(xy 229.87 177.8) (xy 232.41 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f0a311f3-267c-4dd7-863c-c80b3bb87a45")
+	)
+	(wire
+		(pts
+			(xy 240.03 199.39) (xy 260.35 199.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f0e150d4-3546-49a4-a2a9-e7c18b2388c3")
+	)
+	(wire
+		(pts
+			(xy 137.16 60.96) (xy 137.16 199.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f10d25d2-5d7a-4dce-a705-e0ef338aff14")
+	)
+	(wire
+		(pts
+			(xy 119.38 40.64) (xy 119.38 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f162d11c-956e-4cf0-851b-7aee5370d9cb")
+	)
+	(wire
+		(pts
+			(xy 261.62 146.05) (xy 260.35 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f285c693-4105-4b41-b505-67b864e3f8b9")
+	)
+	(wire
+		(pts
+			(xy 300.99 162.56) (xy 300.99 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f29787f2-6390-4ab7-a38c-540d2b651daf")
+	)
+	(wire
+		(pts
+			(xy 271.78 177.8) (xy 274.32 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f3bcebac-e99d-4a33-83a0-ab1330ffda82")
+	)
+	(wire
+		(pts
+			(xy 165.1 36.83) (xy 165.1 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f69f7f5c-34fc-4761-a817-3836467b70a1")
+	)
+	(wire
+		(pts
+			(xy 271.78 194.31) (xy 274.32 194.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f6cec78c-0e16-407e-9710-7977c6659300")
+	)
+	(wire
+		(pts
+			(xy 218.44 146.05) (xy 218.44 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f7043e5a-a135-40e8-bab5-ffd92f815823")
+	)
+	(wire
+		(pts
+			(xy 172.72 110.49) (xy 254 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f71ce933-0c3c-41fa-a0be-986a588bea8c")
+	)
+	(wire
+		(pts
+			(xy 240.03 177.8) (xy 240.03 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f81d5de8-de68-4b43-b584-9077657a8159")
+	)
+	(wire
+		(pts
+			(xy 314.96 226.06) (xy 312.42 226.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f959ff45-c7f2-478f-98a3-bc68bf03c9e6")
+	)
+	(wire
+		(pts
+			(xy 334.01 209.55) (xy 334.01 226.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f9c24fc5-83c7-47d5-b00e-1639eea8b05f")
+	)
+	(wire
+		(pts
+			(xy 170.18 104.14) (xy 170.18 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f9d23c12-9e49-4c37-9793-579bf84896b8")
+	)
+	(wire
+		(pts
+			(xy 218.44 231.14) (xy 240.03 231.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fb36c816-e0cf-4f16-b1f1-8c4b5743cc24")
+	)
+	(wire
+		(pts
+			(xy 314.96 209.55) (xy 314.96 226.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fb87b331-b5b6-4471-b44f-e05fd3238bec")
+	)
+	(wire
+		(pts
+			(xy 254 162.56) (xy 254 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fd9d4f6e-d340-4e62-9b56-8e59de159a61")
 	)
 	(table
 		(column_count 8)
@@ -2177,85 +5268,91 @@
 			)
 		)
 	)
+	(label "DEBUG_SWCLK"
+		(at 82.55 45.72 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "16b409b0-9b99-4555-974b-8c63024a0c2f")
+	)
 	(label "NRESET"
-		(at 48.26 60.96 0)
+		(at 82.55 40.64 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "72454364-5647-47f6-8f1f-03f1d3411786")
+	)
+	(label "DEBUG_SWDIO"
+		(at 82.55 48.26 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "a0bf1d24-bbbc-4e5c-a12d-7ff67f9e7012")
+	)
+	(label "DEBUG_SWCLK"
+		(at 154.94 120.65 90)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "4638338e-68c4-4d20-bab8-029b30459eba")
+		(uuid "ce4a49bc-b64f-4bef-8f64-abe488af9bdc")
 	)
-	(symbol
-		(lib_id "power:+3V3")
-		(at 43.18 25.4 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "091b1a94-2277-4e19-819b-2d2fe9a0e8ba")
-		(property "Reference" "#PWR02"
-			(at 43.18 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
+	(label "NRESET"
+		(at 119.38 40.64 0)
+		(effects
+			(font
+				(size 1.27 1.27)
 			)
+			(justify left bottom)
 		)
-		(property "Value" "+3V3"
-			(at 43.18 20.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
+		(uuid "dc5eaa7d-60a9-43ae-9e18-ed6626696d5e")
+	)
+	(label "DEBUG_SWDIO"
+		(at 157.48 120.65 90)
+		(effects
+			(font
+				(size 1.27 1.27)
 			)
+			(justify left bottom)
 		)
-		(property "Footprint" ""
-			(at 43.18 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
+		(uuid "e04ce7c6-b47a-4ee4-962f-78e011d03014")
+	)
+	(hierarchical_label "KEYBOARD_SDA"
+		(shape input)
+		(at 160.02 104.14 270)
+		(effects
+			(font
+				(size 1.27 1.27)
 			)
+			(justify right)
 		)
-		(property "Datasheet" ""
-			(at 43.18 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
+		(uuid "96f7ceab-b1ba-4104-9875-fa8460bbc6ad")
+	)
+	(hierarchical_label "KEYBOARD_SCL"
+		(shape input)
+		(at 162.56 104.14 270)
+		(effects
+			(font
+				(size 1.27 1.27)
 			)
+			(justify right)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 43.18 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "4ddf5713-d411-4c37-a12e-3ab3dba45169")
-		)
-		(instances
-			(project "wow_communicator"
-				(path "/99202413-db31-4104-a376-6ecb768b1972/ea4e9145-65ec-4b68-b48a-8fe9ba7ca003"
-					(reference "#PWR02")
-					(unit 1)
-				)
-			)
-		)
+		(uuid "9a52bfdc-7eb2-4446-9b34-94fe17152bb5")
 	)
 	(symbol
 		(lib_id "Simulation_SPICE:0")
-		(at 54.61 35.56 0)
+		(at 184.15 49.53 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2263,7 +5360,7 @@
 		(dnp no)
 		(uuid "0a3e0bf5-c8f6-43c9-9c8f-6ad9d9061969")
 		(property "Reference" "#GND03"
-			(at 54.61 40.64 0)
+			(at 184.15 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2272,7 +5369,7 @@
 			)
 		)
 		(property "Value" "0"
-			(at 54.61 38.1 0)
+			(at 184.15 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2280,7 +5377,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 54.61 35.56 0)
+			(at 184.15 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2289,7 +5386,7 @@
 			)
 		)
 		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#subsec_Circuit_elements__device"
-			(at 54.61 45.72 0)
+			(at 184.15 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2298,7 +5395,7 @@
 			)
 		)
 		(property "Description" "0V reference potential for simulation"
-			(at 54.61 43.18 0)
+			(at 184.15 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2320,7 +5417,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_SPST")
-		(at 130.81 73.66 0)
+		(at 204.47 146.05 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2328,7 +5425,7 @@
 		(dnp no)
 		(uuid "0ca67716-5732-4ac9-974c-5933ff6c1539")
 		(property "Reference" "SW2"
-			(at 130.81 67.31 0)
+			(at 204.47 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2336,7 +5433,7 @@
 			)
 		)
 		(property "Value" "SW_SPST"
-			(at 130.81 69.85 0)
+			(at 204.47 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2344,7 +5441,7 @@
 			)
 		)
 		(property "Footprint" "Button_Switch_SMD:SW_Tactile_SPST_NO_Straight_CK_PTS636Sx25SMTRLFS"
-			(at 130.81 73.66 0)
+			(at 204.47 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2353,7 +5450,7 @@
 			)
 		)
 		(property "Datasheet" "datasheet/pts636.pdf"
-			(at 130.81 73.66 0)
+			(at 204.47 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2362,7 +5459,7 @@
 			)
 		)
 		(property "Description" "SW SPST 6x3.5mm"
-			(at 130.81 73.66 0)
+			(at 204.47 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2371,7 +5468,7 @@
 			)
 		)
 		(property "Manufacturer" "C&K"
-			(at 130.81 73.66 0)
+			(at 204.47 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2380,7 +5477,7 @@
 			)
 		)
 		(property "Part Number" "PTS636SMG25JSMTR LFS"
-			(at 130.81 73.66 0)
+			(at 204.47 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2388,8 +5485,8 @@
 				(hide yes)
 			)
 		)
-		(property "Key Text" "Q"
-			(at 130.81 75.438 0)
+		(property "Key Text" "Q !"
+			(at 204.47 147.828 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2413,15 +5510,15 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_SPST")
-		(at 148.59 74.93 0)
+		(at 266.7 177.8 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "0dfca84d-73ac-42f6-beb9-57cb3068778e")
-		(property "Reference" "SW1"
-			(at 148.59 68.58 0)
+		(uuid "0ccdd225-92cf-4c80-890d-824fa26d7a37")
+		(property "Reference" "SW216"
+			(at 266.7 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2429,7 +5526,7 @@
 			)
 		)
 		(property "Value" "SW_SPST"
-			(at 148.59 71.12 0)
+			(at 266.7 173.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2437,7 +5534,7 @@
 			)
 		)
 		(property "Footprint" "Button_Switch_SMD:SW_Tactile_SPST_NO_Straight_CK_PTS636Sx25SMTRLFS"
-			(at 148.59 74.93 0)
+			(at 266.7 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2446,7 +5543,7 @@
 			)
 		)
 		(property "Datasheet" "datasheet/pts636.pdf"
-			(at 148.59 74.93 0)
+			(at 266.7 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2455,7 +5552,7 @@
 			)
 		)
 		(property "Description" "SW SPST 6x3.5mm"
-			(at 148.59 74.93 0)
+			(at 266.7 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2464,7 +5561,7 @@
 			)
 		)
 		(property "Manufacturer" "C&K"
-			(at 148.59 74.93 0)
+			(at 266.7 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2473,7 +5570,7 @@
 			)
 		)
 		(property "Part Number" "PTS636SMG25JSMTR LFS"
-			(at 148.59 74.93 0)
+			(at 266.7 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2481,8 +5578,101 @@
 				(hide yes)
 			)
 		)
-		(property "Key Text" "W"
-			(at 148.59 76.708 0)
+		(property "Key Text" "H 6"
+			(at 266.7 179.578 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "9403e2c6-35e6-4bbb-bc9b-4f51ba19d044")
+		)
+		(pin "1"
+			(uuid "0f451f9e-9956-4e94-935a-6913ff66c78f")
+		)
+		(instances
+			(project "wow_communicator"
+				(path "/99202413-db31-4104-a376-6ecb768b1972/ea4e9145-65ec-4b68-b48a-8fe9ba7ca003"
+					(reference "SW216")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_SPST")
+		(at 224.79 146.05 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0dfca84d-73ac-42f6-beb9-57cb3068778e")
+		(property "Reference" "SW1"
+			(at 224.79 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_SPST"
+			(at 224.79 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_SMD:SW_Tactile_SPST_NO_Straight_CK_PTS636Sx25SMTRLFS"
+			(at 224.79 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "datasheet/pts636.pdf"
+			(at 224.79 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SW SPST 6x3.5mm"
+			(at 224.79 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "C&K"
+			(at 224.79 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "PTS636SMG25JSMTR LFS"
+			(at 224.79 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Key Text" "W @"
+			(at 224.79 147.828 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2505,8 +5695,1096 @@
 		)
 	)
 	(symbol
+		(lib_id "Switch:SW_SPST")
+		(at 246.38 226.06 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "118dea2a-3216-491a-959f-17ea1a73203e")
+		(property "Reference" "SW236"
+			(at 246.38 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_SPST"
+			(at 246.38 222.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_SMD:SW_Tactile_SPST_NO_Straight_CK_PTS636Sx25SMTRLFS"
+			(at 246.38 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "datasheet/pts636.pdf"
+			(at 246.38 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SW SPST 6x3.5mm"
+			(at 246.38 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "C&K"
+			(at 246.38 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "PTS636SMG25JSMTR LFS"
+			(at 246.38 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Key Text" "Mod 1"
+			(at 246.38 227.838 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "fa1148f4-cb53-4f3d-a28b-2496132f946e")
+		)
+		(pin "1"
+			(uuid "2fd0f4cf-5744-4a28-88e2-1ee4f6e82a93")
+		)
+		(instances
+			(project "wow_communicator"
+				(path "/99202413-db31-4104-a376-6ecb768b1972/ea4e9145-65ec-4b68-b48a-8fe9ba7ca003"
+					(reference "SW236")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_SPST")
+		(at 266.7 194.31 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "14b3df81-3fbf-47aa-8592-75cb630a9866")
+		(property "Reference" "SW223"
+			(at 266.7 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_SPST"
+			(at 266.7 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_SMD:SW_Tactile_SPST_NO_Straight_CK_PTS636Sx25SMTRLFS"
+			(at 266.7 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "datasheet/pts636.pdf"
+			(at 266.7 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SW SPST 6x3.5mm"
+			(at 266.7 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "C&K"
+			(at 266.7 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "PTS636SMG25JSMTR LFS"
+			(at 266.7 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Key Text" "C + ="
+			(at 266.7 196.088 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "844c25e7-a9c9-4368-a5c4-c156d1869463")
+		)
+		(pin "1"
+			(uuid "1d0886dd-3798-4757-87a0-96aa34787c91")
+		)
+		(instances
+			(project "wow_communicator"
+				(path "/99202413-db31-4104-a376-6ecb768b1972/ea4e9145-65ec-4b68-b48a-8fe9ba7ca003"
+					(reference "SW223")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_SPST")
+		(at 266.7 209.55 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1a8833db-572c-4074-9523-213410d3d497")
+		(property "Reference" "SW230"
+			(at 266.7 203.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_SPST"
+			(at 266.7 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_SMD:SW_Tactile_SPST_NO_Straight_CK_PTS636Sx25SMTRLFS"
+			(at 266.7 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "datasheet/pts636.pdf"
+			(at 266.7 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SW SPST 6x3.5mm"
+			(at 266.7 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "C&K"
+			(at 266.7 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "PTS636SMG25JSMTR LFS"
+			(at 266.7 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Key Text" ". > /"
+			(at 266.7 211.328 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "054771ef-bbe3-4f6d-8ff5-5844e00faf2c")
+		)
+		(pin "1"
+			(uuid "e69935a3-2787-45b5-b85d-d888b171101d")
+		)
+		(instances
+			(project "wow_communicator"
+				(path "/99202413-db31-4104-a376-6ecb768b1972/ea4e9145-65ec-4b68-b48a-8fe9ba7ca003"
+					(reference "SW230")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Simulation_SPICE:0")
+		(at 58.42 55.88 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1ab35bce-1af2-4600-9655-ae086103b23d")
+		(property "Reference" "#GND0202"
+			(at 58.42 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "0"
+			(at 58.42 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 58.42 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#subsec_Circuit_elements__device"
+			(at 58.42 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "0V reference potential for simulation"
+			(at 58.42 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3ea30f6a-fc09-4fac-80f4-2b3b9661dd98")
+		)
+		(instances
+			(project "wow_communicator"
+				(path "/99202413-db31-4104-a376-6ecb768b1972/ea4e9145-65ec-4b68-b48a-8fe9ba7ca003"
+					(reference "#GND0202")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_SPST")
+		(at 307.34 194.31 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "220336d2-991e-4002-a763-7bf555d3ec87")
+		(property "Reference" "SW225"
+			(at 307.34 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_SPST"
+			(at 307.34 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_SMD:SW_Tactile_SPST_NO_Straight_CK_PTS636Sx25SMTRLFS"
+			(at 307.34 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "datasheet/pts636.pdf"
+			(at 307.34 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SW SPST 6x3.5mm"
+			(at 307.34 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "C&K"
+			(at 307.34 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "PTS636SMG25JSMTR LFS"
+			(at 307.34 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Key Text" "B ' \""
+			(at 307.34 196.088 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "64603ac3-9385-4171-8110-d8db28c5705b")
+		)
+		(pin "1"
+			(uuid "d130645c-aa1c-4b90-b0ed-8486d1837920")
+		)
+		(instances
+			(project "wow_communicator"
+				(path "/99202413-db31-4104-a376-6ecb768b1972/ea4e9145-65ec-4b68-b48a-8fe9ba7ca003"
+					(reference "SW225")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_SPST")
+		(at 246.38 194.31 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2a022cb7-74df-4e22-8bb0-cfb7cce156a1")
+		(property "Reference" "SW222"
+			(at 246.38 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_SPST"
+			(at 246.38 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_SMD:SW_Tactile_SPST_NO_Straight_CK_PTS636Sx25SMTRLFS"
+			(at 246.38 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "datasheet/pts636.pdf"
+			(at 246.38 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SW SPST 6x3.5mm"
+			(at 246.38 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "C&K"
+			(at 246.38 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "PTS636SMG25JSMTR LFS"
+			(at 246.38 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Key Text" "X - _"
+			(at 246.38 196.088 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "db03a5e2-515a-4b70-be99-52cc5b71846a")
+		)
+		(pin "1"
+			(uuid "5d553554-300b-4b23-a2e9-a4730ccc55e3")
+		)
+		(instances
+			(project "wow_communicator"
+				(path "/99202413-db31-4104-a376-6ecb768b1972/ea4e9145-65ec-4b68-b48a-8fe9ba7ca003"
+					(reference "SW222")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_SPST")
+		(at 266.7 146.05 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2a3d6585-e110-4f6d-a150-a2900e6e75e4")
+		(property "Reference" "SW202"
+			(at 266.7 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_SPST"
+			(at 266.7 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_SMD:SW_Tactile_SPST_NO_Straight_CK_PTS636Sx25SMTRLFS"
+			(at 266.7 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "datasheet/pts636.pdf"
+			(at 266.7 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SW SPST 6x3.5mm"
+			(at 266.7 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "C&K"
+			(at 266.7 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "PTS636SMG25JSMTR LFS"
+			(at 266.7 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Key Text" "R $"
+			(at 266.7 147.828 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "03f7de44-1a65-405b-99ff-ab6fcadc027b")
+		)
+		(pin "1"
+			(uuid "c0fac524-d11b-44ef-84f2-a91444131eae")
+		)
+		(instances
+			(project "wow_communicator"
+				(path "/99202413-db31-4104-a376-6ecb768b1972/ea4e9145-65ec-4b68-b48a-8fe9ba7ca003"
+					(reference "SW202")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_SPST")
+		(at 204.47 194.31 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2d716ba6-3f63-4feb-986d-541614b6c835")
+		(property "Reference" "SW220"
+			(at 204.47 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_SPST"
+			(at 204.47 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_SMD:SW_Tactile_SPST_NO_Straight_CK_PTS636Sx25SMTRLFS"
+			(at 204.47 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "datasheet/pts636.pdf"
+			(at 204.47 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SW SPST 6x3.5mm"
+			(at 204.47 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "C&K"
+			(at 204.47 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "PTS636SMG25JSMTR LFS"
+			(at 204.47 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Key Text" "L 9"
+			(at 204.47 196.088 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "982c87c5-9567-4e4c-bc16-c592e83ba565")
+		)
+		(pin "1"
+			(uuid "98474335-810a-4905-9416-29824a214c5e")
+		)
+		(instances
+			(project "wow_communicator"
+				(path "/99202413-db31-4104-a376-6ecb768b1972/ea4e9145-65ec-4b68-b48a-8fe9ba7ca003"
+					(reference "SW220")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_SPST")
+		(at 204.47 209.55 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2e9e2ac7-ff9a-4cb7-a3a5-8ac399baded3")
+		(property "Reference" "SW227"
+			(at 204.47 203.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_SPST"
+			(at 204.47 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_SMD:SW_Tactile_SPST_NO_Straight_CK_PTS636Sx25SMTRLFS"
+			(at 204.47 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "datasheet/pts636.pdf"
+			(at 204.47 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SW SPST 6x3.5mm"
+			(at 204.47 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "C&K"
+			(at 204.47 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "PTS636SMG25JSMTR LFS"
+			(at 204.47 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Key Text" "N"
+			(at 204.47 211.328 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "94f6823b-00f9-46b0-90bb-cf9dd233e8c0")
+		)
+		(pin "1"
+			(uuid "e9b0d0bb-64d4-43a6-b220-03d50093aaa2")
+		)
+		(instances
+			(project "wow_communicator"
+				(path "/99202413-db31-4104-a376-6ecb768b1972/ea4e9145-65ec-4b68-b48a-8fe9ba7ca003"
+					(reference "SW227")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_SPST")
+		(at 204.47 226.06 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3d9205e0-c662-4c33-94b5-fc99789fe026")
+		(property "Reference" "SW234"
+			(at 204.47 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_SPST"
+			(at 204.47 222.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_SMD:SW_Tactile_SPST_NO_Straight_CK_PTS636Sx25SMTRLFS"
+			(at 204.47 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "datasheet/pts636.pdf"
+			(at 204.47 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SW SPST 6x3.5mm"
+			(at 204.47 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "C&K"
+			(at 204.47 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "PTS636SMG25JSMTR LFS"
+			(at 204.47 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Key Text" "→"
+			(at 204.47 227.838 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "44562130-7582-4dbc-9a0f-d8b05d941ed1")
+		)
+		(pin "1"
+			(uuid "92f141ee-7a74-4740-89f5-1e7436da1d15")
+		)
+		(instances
+			(project "wow_communicator"
+				(path "/99202413-db31-4104-a376-6ecb768b1972/ea4e9145-65ec-4b68-b48a-8fe9ba7ca003"
+					(reference "SW234")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_SPST")
+		(at 224.79 177.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3f913792-ba12-4ae4-8684-a8b89ccc265d")
+		(property "Reference" "SW214"
+			(at 224.79 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_SPST"
+			(at 224.79 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_SMD:SW_Tactile_SPST_NO_Straight_CK_PTS636Sx25SMTRLFS"
+			(at 224.79 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "datasheet/pts636.pdf"
+			(at 224.79 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SW SPST 6x3.5mm"
+			(at 224.79 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "C&K"
+			(at 224.79 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "PTS636SMG25JSMTR LFS"
+			(at 224.79 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Key Text" "F 4 `"
+			(at 224.79 179.578 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "ed019209-ea1f-4e60-9c9c-3c4d1a71a0a2")
+		)
+		(pin "1"
+			(uuid "8c89ae36-3bab-4c81-91e8-6a22a80b813c")
+		)
+		(instances
+			(project "wow_communicator"
+				(path "/99202413-db31-4104-a376-6ecb768b1972/ea4e9145-65ec-4b68-b48a-8fe9ba7ca003"
+					(reference "SW214")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_SPST")
+		(at 307.34 177.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "407f0a31-e8ff-42f8-bbf3-ef02b9b72ff8")
+		(property "Reference" "SW218"
+			(at 307.34 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_SPST"
+			(at 307.34 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_SMD:SW_Tactile_SPST_NO_Straight_CK_PTS636Sx25SMTRLFS"
+			(at 307.34 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "datasheet/pts636.pdf"
+			(at 307.34 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SW SPST 6x3.5mm"
+			(at 307.34 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "C&K"
+			(at 307.34 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "PTS636SMG25JSMTR LFS"
+			(at 307.34 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Key Text" "K 8"
+			(at 307.34 179.578 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "227fba25-d156-4336-afcf-918945366c2b")
+		)
+		(pin "1"
+			(uuid "58fbd263-0ca9-4552-9fd2-6ef1f03499a8")
+		)
+		(instances
+			(project "wow_communicator"
+				(path "/99202413-db31-4104-a376-6ecb768b1972/ea4e9145-65ec-4b68-b48a-8fe9ba7ca003"
+					(reference "SW218")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
-		(at 43.18 31.75 0)
+		(at 172.72 45.72 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2515,7 +6793,7 @@
 		(fields_autoplaced yes)
 		(uuid "433b9ee6-91f6-451f-b59d-e210132c3a41")
 		(property "Reference" "C1"
-			(at 46.99 30.4799 0)
+			(at 176.53 44.4499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2524,7 +6802,7 @@
 			)
 		)
 		(property "Value" "4.7u"
-			(at 46.99 33.0199 0)
+			(at 176.53 46.9899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2533,7 +6811,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric_Pad0.64x0.40mm_HandSolder"
-			(at 44.1452 35.56 0)
+			(at 173.6852 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2542,7 +6820,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 43.18 31.75 0)
+			(at 172.72 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2551,7 +6829,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 43.18 31.75 0)
+			(at 172.72 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2566,7 +6844,7 @@
 			(uuid "dff4e8c8-63e7-4860-bbd2-e74c67d2dc6b")
 		)
 		(instances
-			(project ""
+			(project "wow_communicator"
 				(path "/99202413-db31-4104-a376-6ecb768b1972/ea4e9145-65ec-4b68-b48a-8fe9ba7ca003"
 					(reference "C1")
 					(unit 1)
@@ -2575,17 +6853,202 @@
 		)
 	)
 	(symbol
-		(lib_id "MCU_ST_STM32C0:STM32C011F6Px")
-		(at 73.66 76.2 0)
+		(lib_id "Switch:SW_SPST")
+		(at 307.34 226.06 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
+		(uuid "4358e501-e1fd-4dba-84e8-ac6f02a8e6d8")
+		(property "Reference" "SW239"
+			(at 307.34 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_SPST"
+			(at 307.34 222.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_SMD:SW_Tactile_SPST_NO_Straight_CK_PTS636Sx25SMTRLFS"
+			(at 307.34 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "datasheet/pts636.pdf"
+			(at 307.34 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SW SPST 6x3.5mm"
+			(at 307.34 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "C&K"
+			(at 307.34 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "PTS636SMG25JSMTR LFS"
+			(at 307.34 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Key Text" ""
+			(at 307.34 227.838 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "5bc01973-2a5c-4626-8bad-f97bb7894b85")
+		)
+		(pin "1"
+			(uuid "e304d3f9-1d24-4e09-8ba2-87d329258ece")
+		)
+		(instances
+			(project "wow_communicator"
+				(path "/99202413-db31-4104-a376-6ecb768b1972/ea4e9145-65ec-4b68-b48a-8fe9ba7ca003"
+					(reference "SW239")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_SPST")
+		(at 224.79 226.06 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "475f8c33-6d9b-4067-9135-5c71b7c6e2f5")
+		(property "Reference" "SW235"
+			(at 224.79 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_SPST"
+			(at 224.79 222.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_SMD:SW_Tactile_SPST_NO_Straight_CK_PTS636Sx25SMTRLFS"
+			(at 224.79 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "datasheet/pts636.pdf"
+			(at 224.79 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SW SPST 6x3.5mm"
+			(at 224.79 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "C&K"
+			(at 224.79 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "PTS636SMG25JSMTR LFS"
+			(at 224.79 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Key Text" "Shift"
+			(at 224.79 227.838 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "3d4c03db-d4d0-494a-9e1f-95f538492ca3")
+		)
+		(pin "1"
+			(uuid "b8c27c4c-ebef-4532-a90c-6e0eaa68d157")
+		)
+		(instances
+			(project "wow_communicator"
+				(path "/99202413-db31-4104-a376-6ecb768b1972/ea4e9145-65ec-4b68-b48a-8fe9ba7ca003"
+					(reference "SW235")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MCU_ST_STM32C0:STM32C011F6Px")
+		(at 160.02 86.36 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(uuid "4ac40039-87b1-411a-86e0-fbd26c59ecb8")
 		(property "Reference" "U1"
-			(at 75.8033 50.8 0)
+			(at 185.166 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2594,7 +7057,7 @@
 			)
 		)
 		(property "Value" "STM32C011F6Px"
-			(at 75.8033 53.34 0)
+			(at 182.118 86.106 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2603,7 +7066,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm"
-			(at 58.42 96.52 0)
+			(at 133.858 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2612,8 +7075,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.st.com/resource/en/datasheet/stm32c011f6.pdf"
-			(at 73.66 76.2 0)
+		(property "Datasheet" "datsheet/stm32c011f6.pdf"
+			(at 160.02 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2622,7 +7085,7 @@
 			)
 		)
 		(property "Description" "STMicroelectronics Arm Cortex-M0+ MCU, 32KB flash, 6KB RAM, 48 MHz, 2.0-3.6V, 18 GPIO, TSSOP20"
-			(at 73.66 76.2 0)
+			(at 131.572 86.106 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2704,17 +7167,354 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3V3")
-		(at 73.66 52.07 0)
+		(lib_id "Switch:SW_SPST")
+		(at 224.79 194.31 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4cee420d-5371-41a7-bdcd-3b88bbdaa6a6")
+		(property "Reference" "SW221"
+			(at 224.79 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_SPST"
+			(at 224.79 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_SMD:SW_Tactile_SPST_NO_Straight_CK_PTS636Sx25SMTRLFS"
+			(at 224.79 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "datasheet/pts636.pdf"
+			(at 224.79 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SW SPST 6x3.5mm"
+			(at 224.79 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "C&K"
+			(at 224.79 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "PTS636SMG25JSMTR LFS"
+			(at 224.79 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Key Text" "Z 0"
+			(at 224.79 196.088 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "1e85f863-de58-40b5-87cb-b0ddc009ac81")
+		)
+		(pin "1"
+			(uuid "00be5bda-dd70-414f-9c9b-aef3d1d5f2b1")
+		)
+		(instances
+			(project "wow_communicator"
+				(path "/99202413-db31-4104-a376-6ecb768b1972/ea4e9145-65ec-4b68-b48a-8fe9ba7ca003"
+					(reference "SW221")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_SPST")
+		(at 287.02 226.06 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5a65aeec-a594-4d85-8cd0-0c348f8a08bc")
+		(property "Reference" "SW238"
+			(at 287.02 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_SPST"
+			(at 287.02 222.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_SMD:SW_Tactile_SPST_NO_Straight_CK_PTS636Sx25SMTRLFS"
+			(at 287.02 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "datasheet/pts636.pdf"
+			(at 287.02 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SW SPST 6x3.5mm"
+			(at 287.02 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "C&K"
+			(at 287.02 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "PTS636SMG25JSMTR LFS"
+			(at 287.02 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Key Text" ""
+			(at 287.02 227.838 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "1907b69f-2f49-44c4-b3dc-76f4d2158ef7")
+		)
+		(pin "1"
+			(uuid "c1ac5584-f1c3-4b21-811b-b2113e78b792")
+		)
+		(instances
+			(project "wow_communicator"
+				(path "/99202413-db31-4104-a376-6ecb768b1972/ea4e9145-65ec-4b68-b48a-8fe9ba7ca003"
+					(reference "SW238")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_ARM_SWD_TagConnect_TC2030")
+		(at 60.96 45.72 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "5acb68fc-76df-4dfb-998d-0afd119e2804")
+		(property "Reference" "J201"
+			(at 54.61 44.4499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "DEBUG"
+			(at 54.61 46.9899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Connector:Tag-Connect_TC2030-IDC-FP_2x03_P1.27mm_Vertical"
+			(at 60.96 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.tag-connect.com/wp-content/uploads/bsk-pdf-manager/TC2030-CTX_1.pdf"
+			(at 60.96 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Tag-Connect ARM Cortex SWD JTAG connector, 6 pin"
+			(at 60.96 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "5"
+			(uuid "51a52f50-79df-4617-a561-9453ef7e26d4")
+		)
+		(pin "1"
+			(uuid "8c79c8fb-de4f-4932-9e2d-04e641129a2e")
+		)
+		(pin "6"
+			(uuid "c0f5f9ef-7a1b-474e-b81b-24ef5ff0c1e1")
+		)
+		(pin "3"
+			(uuid "a9eb63b0-8ba3-4790-9723-facbe91e9285")
+		)
+		(pin "4"
+			(uuid "6e8b319f-d6fd-4a9a-8fe1-9e7a3712b664")
+		)
+		(pin "2"
+			(uuid "d94836b8-1962-4f5a-bb6b-088a592e4473")
+		)
+		(instances
+			(project ""
+				(path "/99202413-db31-4104-a376-6ecb768b1972/ea4e9145-65ec-4b68-b48a-8fe9ba7ca003"
+					(reference "J201")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 119.38 45.72 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
+		(uuid "5c3ceb4f-ec8a-482b-bb7f-1b3789f1f4f5")
+		(property "Reference" "C201"
+			(at 123.19 44.4499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 123.19 46.9899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
+			(at 120.3452 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 119.38 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 119.38 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "364007cc-2eb1-4cee-bd02-652d9fd2111a")
+		)
+		(pin "2"
+			(uuid "3725fca1-f70c-4607-9fe5-8a7c5a81a2d7")
+		)
+		(instances
+			(project "wow_communicator"
+				(path "/99202413-db31-4104-a376-6ecb768b1972/ea4e9145-65ec-4b68-b48a-8fe9ba7ca003"
+					(reference "C201")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 167.64 38.1 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(uuid "5d78de00-5627-4fb6-8dcf-602d81c681fd")
 		(property "Reference" "#PWR01"
-			(at 73.66 55.88 0)
+			(at 167.64 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2723,7 +7523,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 73.66 46.99 0)
+			(at 167.894 32.512 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2731,7 +7531,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 73.66 52.07 0)
+			(at 167.64 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2740,7 +7540,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 73.66 52.07 0)
+			(at 167.64 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2749,7 +7549,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 73.66 52.07 0)
+			(at 167.64 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2770,8 +7570,194 @@
 		)
 	)
 	(symbol
+		(lib_id "Switch:SW_SPST")
+		(at 287.02 162.56 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5e45e0a1-875e-4dd6-b30e-e3699fe93fab")
+		(property "Reference" "SW210"
+			(at 287.02 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_SPST"
+			(at 287.02 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_SMD:SW_Tactile_SPST_NO_Straight_CK_PTS636Sx25SMTRLFS"
+			(at 287.02 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "datasheet/pts636.pdf"
+			(at 287.02 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SW SPST 6x3.5mm"
+			(at 287.02 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "C&K"
+			(at 287.02 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "PTS636SMG25JSMTR LFS"
+			(at 287.02 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Key Text" "A 1 |"
+			(at 287.02 164.338 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "cfa72eab-9677-4d7a-bb53-b28449442d0e")
+		)
+		(pin "1"
+			(uuid "f20a2b94-9f34-444c-a3b5-0ee483b7184f")
+		)
+		(instances
+			(project "wow_communicator"
+				(path "/99202413-db31-4104-a376-6ecb768b1972/ea4e9145-65ec-4b68-b48a-8fe9ba7ca003"
+					(reference "SW210")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_SPST")
+		(at 326.39 209.55 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6356830a-a744-4845-8e1c-7b4664a9f2f2")
+		(property "Reference" "SW233"
+			(at 326.39 203.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_SPST"
+			(at 326.39 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_SMD:SW_Tactile_SPST_NO_Straight_CK_PTS636Sx25SMTRLFS"
+			(at 326.39 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "datasheet/pts636.pdf"
+			(at 326.39 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SW SPST 6x3.5mm"
+			(at 326.39 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "C&K"
+			(at 326.39 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "PTS636SMG25JSMTR LFS"
+			(at 326.39 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Key Text" "↓"
+			(at 326.39 211.328 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "19923a15-e624-431b-a71d-e06d08748ae3")
+		)
+		(pin "1"
+			(uuid "c0eb16c4-ddbf-4288-856c-e5d4a4d41f45")
+		)
+		(instances
+			(project "wow_communicator"
+				(path "/99202413-db31-4104-a376-6ecb768b1972/ea4e9145-65ec-4b68-b48a-8fe9ba7ca003"
+					(reference "SW233")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Simulation_SPICE:0")
-		(at 43.18 35.56 0)
+		(at 172.72 49.53 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2779,7 +7765,7 @@
 		(dnp no)
 		(uuid "69d1764f-6ffb-4e76-9d40-3793e768e159")
 		(property "Reference" "#GND02"
-			(at 43.18 40.64 0)
+			(at 172.72 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2788,7 +7774,7 @@
 			)
 		)
 		(property "Value" "0"
-			(at 43.18 38.1 0)
+			(at 172.72 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2796,7 +7782,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 43.18 35.56 0)
+			(at 172.72 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2805,7 +7791,7 @@
 			)
 		)
 		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#subsec_Circuit_elements__device"
-			(at 43.18 45.72 0)
+			(at 172.72 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2814,7 +7800,7 @@
 			)
 		)
 		(property "Description" "0V reference potential for simulation"
-			(at 43.18 43.18 0)
+			(at 172.72 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2835,8 +7821,1068 @@
 		)
 	)
 	(symbol
+		(lib_id "Switch:SW_SPST")
+		(at 307.34 162.56 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6a764df4-090e-438f-9b8d-52339639248e")
+		(property "Reference" "SW211"
+			(at 307.34 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_SPST"
+			(at 307.34 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_SMD:SW_Tactile_SPST_NO_Straight_CK_PTS636Sx25SMTRLFS"
+			(at 307.34 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "datasheet/pts636.pdf"
+			(at 307.34 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SW SPST 6x3.5mm"
+			(at 307.34 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "C&K"
+			(at 307.34 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "PTS636SMG25JSMTR LFS"
+			(at 307.34 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Key Text" "S 2 \\"
+			(at 307.34 164.338 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "01965fc2-ed02-42fc-8027-85a0d99cd566")
+		)
+		(pin "1"
+			(uuid "e1ab6859-7454-460b-a07e-8225ae372995")
+		)
+		(instances
+			(project "wow_communicator"
+				(path "/99202413-db31-4104-a376-6ecb768b1972/ea4e9145-65ec-4b68-b48a-8fe9ba7ca003"
+					(reference "SW211")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_SPST")
+		(at 287.02 177.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7f17319d-fc82-4241-873e-c3c7f01c05c5")
+		(property "Reference" "SW217"
+			(at 287.02 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_SPST"
+			(at 287.02 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_SMD:SW_Tactile_SPST_NO_Straight_CK_PTS636Sx25SMTRLFS"
+			(at 287.02 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "datasheet/pts636.pdf"
+			(at 287.02 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SW SPST 6x3.5mm"
+			(at 287.02 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "C&K"
+			(at 287.02 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "PTS636SMG25JSMTR LFS"
+			(at 287.02 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Key Text" "J 7"
+			(at 287.02 179.578 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "b4abdc59-a5ac-4d6d-b481-e7a9d69a7df2")
+		)
+		(pin "1"
+			(uuid "2248dc22-db10-4eff-b754-33d2d1ffc1c2")
+		)
+		(instances
+			(project "wow_communicator"
+				(path "/99202413-db31-4104-a376-6ecb768b1972/ea4e9145-65ec-4b68-b48a-8fe9ba7ca003"
+					(reference "SW217")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_SPST")
+		(at 326.39 177.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8bc9ffb9-c183-4513-840b-fd982bcb6d65")
+		(property "Reference" "SW219"
+			(at 326.39 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_SPST"
+			(at 326.39 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_SMD:SW_Tactile_SPST_NO_Straight_CK_PTS636Sx25SMTRLFS"
+			(at 326.39 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "datasheet/pts636.pdf"
+			(at 326.39 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SW SPST 6x3.5mm"
+			(at 326.39 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "C&K"
+			(at 326.39 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "PTS636SMG25JSMTR LFS"
+			(at 326.39 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Key Text" "Enter"
+			(at 326.39 179.578 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "9ba52b91-cdb3-4acc-8ddf-8fa6b9f4ea3d")
+		)
+		(pin "1"
+			(uuid "f8ce20b7-b78a-46a4-989f-c20f05f8dafc")
+		)
+		(instances
+			(project "wow_communicator"
+				(path "/99202413-db31-4104-a376-6ecb768b1972/ea4e9145-65ec-4b68-b48a-8fe9ba7ca003"
+					(reference "SW219")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 58.42 35.56 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8d987475-10de-48a0-8804-fcae2a8c6514")
+		(property "Reference" "#PWR0201"
+			(at 58.42 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 58.674 29.972 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 58.42 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 58.42 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 58.42 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4df222bc-3472-4333-ab6f-5593941074e7")
+		)
+		(instances
+			(project "wow_communicator"
+				(path "/99202413-db31-4104-a376-6ecb768b1972/ea4e9145-65ec-4b68-b48a-8fe9ba7ca003"
+					(reference "#PWR0201")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_SPST")
+		(at 246.38 177.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8da395a6-b0bd-40de-a19b-1896f7944853")
+		(property "Reference" "SW215"
+			(at 246.38 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_SPST"
+			(at 246.38 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_SMD:SW_Tactile_SPST_NO_Straight_CK_PTS636Sx25SMTRLFS"
+			(at 246.38 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "datasheet/pts636.pdf"
+			(at 246.38 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SW SPST 6x3.5mm"
+			(at 246.38 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "C&K"
+			(at 246.38 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "PTS636SMG25JSMTR LFS"
+			(at 246.38 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Key Text" "G 5"
+			(at 246.38 179.578 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "9f076aa1-4669-4971-bc57-fd678f4203de")
+		)
+		(pin "1"
+			(uuid "2b20b5ea-bdd6-4216-99e1-4eaf4f7b584a")
+		)
+		(instances
+			(project "wow_communicator"
+				(path "/99202413-db31-4104-a376-6ecb768b1972/ea4e9145-65ec-4b68-b48a-8fe9ba7ca003"
+					(reference "SW215")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_SPST")
+		(at 204.47 162.56 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "92b8a819-374c-456a-bdfb-b152b8b8df5a")
+		(property "Reference" "SW206"
+			(at 204.47 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_SPST"
+			(at 204.47 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_SMD:SW_Tactile_SPST_NO_Straight_CK_PTS636Sx25SMTRLFS"
+			(at 204.47 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "datasheet/pts636.pdf"
+			(at 204.47 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SW SPST 6x3.5mm"
+			(at 204.47 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "C&K"
+			(at 204.47 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "PTS636SMG25JSMTR LFS"
+			(at 204.47 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Key Text" "U & {"
+			(at 204.47 164.338 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "beb77716-1100-4bac-880f-beb663da353c")
+		)
+		(pin "1"
+			(uuid "b46b2f4c-9257-4dce-93ab-e29f5e17b70f")
+		)
+		(instances
+			(project "wow_communicator"
+				(path "/99202413-db31-4104-a376-6ecb768b1972/ea4e9145-65ec-4b68-b48a-8fe9ba7ca003"
+					(reference "SW206")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_SPST")
+		(at 287.02 194.31 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "92d57be2-6d2a-4b44-9568-7277a99a9469")
+		(property "Reference" "SW224"
+			(at 287.02 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_SPST"
+			(at 287.02 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_SMD:SW_Tactile_SPST_NO_Straight_CK_PTS636Sx25SMTRLFS"
+			(at 287.02 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "datasheet/pts636.pdf"
+			(at 287.02 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SW SPST 6x3.5mm"
+			(at 287.02 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "C&K"
+			(at 287.02 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "PTS636SMG25JSMTR LFS"
+			(at 287.02 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Key Text" "V ; :"
+			(at 287.02 196.088 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "472be57d-f416-4028-bc40-48a1af4564b3")
+		)
+		(pin "1"
+			(uuid "3dd46efd-d89c-4885-8524-0bd2af4ab1a8")
+		)
+		(instances
+			(project "wow_communicator"
+				(path "/99202413-db31-4104-a376-6ecb768b1972/ea4e9145-65ec-4b68-b48a-8fe9ba7ca003"
+					(reference "SW224")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Simulation_SPICE:0")
+		(at 119.38 49.53 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9cb3fdd7-2d04-4980-b438-39b117995a57")
+		(property "Reference" "#GND0201"
+			(at 119.38 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "0"
+			(at 119.38 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 119.38 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#subsec_Circuit_elements__device"
+			(at 119.38 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "0V reference potential for simulation"
+			(at 119.38 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "76c8b7bf-a0b2-49f4-aeaf-4aea416cce60")
+		)
+		(instances
+			(project "wow_communicator"
+				(path "/99202413-db31-4104-a376-6ecb768b1972/ea4e9145-65ec-4b68-b48a-8fe9ba7ca003"
+					(reference "#GND0201")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_SPST")
+		(at 326.39 146.05 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9f136ed3-09d5-4663-80e8-6ae1f71860f4")
+		(property "Reference" "SW205"
+			(at 326.39 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_SPST"
+			(at 326.39 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_SMD:SW_Tactile_SPST_NO_Straight_CK_PTS636Sx25SMTRLFS"
+			(at 326.39 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "datasheet/pts636.pdf"
+			(at 326.39 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SW SPST 6x3.5mm"
+			(at 326.39 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "C&K"
+			(at 326.39 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "PTS636SMG25JSMTR LFS"
+			(at 326.39 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Key Text" "ESC"
+			(at 326.39 147.828 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "9904760d-0ceb-4974-b450-ea25437db597")
+		)
+		(pin "1"
+			(uuid "8813ba58-789f-4934-ac6b-682f58c789c6")
+		)
+		(instances
+			(project "wow_communicator"
+				(path "/99202413-db31-4104-a376-6ecb768b1972/ea4e9145-65ec-4b68-b48a-8fe9ba7ca003"
+					(reference "SW205")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_SPST")
+		(at 307.34 146.05 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ac179fdc-1d24-430f-b583-9371c1437356")
+		(property "Reference" "SW204"
+			(at 307.34 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_SPST"
+			(at 307.34 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_SMD:SW_Tactile_SPST_NO_Straight_CK_PTS636Sx25SMTRLFS"
+			(at 307.34 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "datasheet/pts636.pdf"
+			(at 307.34 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SW SPST 6x3.5mm"
+			(at 307.34 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "C&K"
+			(at 307.34 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "PTS636SMG25JSMTR LFS"
+			(at 307.34 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Key Text" "Y ^"
+			(at 307.34 147.828 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "35340b13-030f-4ff6-a2c2-868908511ba4")
+		)
+		(pin "1"
+			(uuid "0d115d51-1f78-4a1f-9340-aa4be3c92190")
+		)
+		(instances
+			(project "wow_communicator"
+				(path "/99202413-db31-4104-a376-6ecb768b1972/ea4e9145-65ec-4b68-b48a-8fe9ba7ca003"
+					(reference "SW204")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_SPST")
+		(at 246.38 162.56 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "bf707942-dd0a-4081-a996-0dfcdefb4815")
+		(property "Reference" "SW208"
+			(at 246.38 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_SPST"
+			(at 246.38 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_SMD:SW_Tactile_SPST_NO_Straight_CK_PTS636Sx25SMTRLFS"
+			(at 246.38 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "datasheet/pts636.pdf"
+			(at 246.38 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SW SPST 6x3.5mm"
+			(at 246.38 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "C&K"
+			(at 246.38 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "PTS636SMG25JSMTR LFS"
+			(at 246.38 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Key Text" "O ) }"
+			(at 246.38 164.338 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "341e14ff-0579-4dfa-bc72-58c45d636d42")
+		)
+		(pin "1"
+			(uuid "2ff17f3e-8c0c-4a02-a7c4-ca8e975d0370")
+		)
+		(instances
+			(project "wow_communicator"
+				(path "/99202413-db31-4104-a376-6ecb768b1972/ea4e9145-65ec-4b68-b48a-8fe9ba7ca003"
+					(reference "SW208")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_SPST")
+		(at 287.02 146.05 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c0a7eb6a-9753-4442-a78a-653e066d80de")
+		(property "Reference" "SW203"
+			(at 287.02 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_SPST"
+			(at 287.02 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_SMD:SW_Tactile_SPST_NO_Straight_CK_PTS636Sx25SMTRLFS"
+			(at 287.02 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "datasheet/pts636.pdf"
+			(at 287.02 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SW SPST 6x3.5mm"
+			(at 287.02 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "C&K"
+			(at 287.02 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "PTS636SMG25JSMTR LFS"
+			(at 287.02 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Key Text" "T %"
+			(at 287.02 147.828 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "526fb753-07aa-4995-b80d-57533e9585c9")
+		)
+		(pin "1"
+			(uuid "c6936e4a-6af6-43c6-b306-539ea79785da")
+		)
+		(instances
+			(project "wow_communicator"
+				(path "/99202413-db31-4104-a376-6ecb768b1972/ea4e9145-65ec-4b68-b48a-8fe9ba7ca003"
+					(reference "SW203")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
-		(at 54.61 31.75 0)
+		(at 184.15 45.72 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2845,7 +8891,7 @@
 		(fields_autoplaced yes)
 		(uuid "c35a8102-3a5c-4d3f-a7e8-6b8e206509c5")
 		(property "Reference" "C2"
-			(at 58.42 30.4799 0)
+			(at 187.96 44.4499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2854,7 +8900,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 58.42 33.0199 0)
+			(at 187.96 46.9899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2863,7 +8909,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
-			(at 55.5752 35.56 0)
+			(at 185.1152 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2872,7 +8918,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 54.61 31.75 0)
+			(at 184.15 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2881,7 +8927,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 54.61 31.75 0)
+			(at 184.15 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2905,8 +8951,101 @@
 		)
 	)
 	(symbol
+		(lib_id "Switch:SW_SPST")
+		(at 266.7 162.56 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c49bc2ae-8ecf-488c-b1da-74439c43cbf8")
+		(property "Reference" "SW209"
+			(at 266.7 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_SPST"
+			(at 266.7 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_SMD:SW_Tactile_SPST_NO_Straight_CK_PTS636Sx25SMTRLFS"
+			(at 266.7 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "datasheet/pts636.pdf"
+			(at 266.7 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SW SPST 6x3.5mm"
+			(at 266.7 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "C&K"
+			(at 266.7 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "PTS636SMG25JSMTR LFS"
+			(at 266.7 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Key Text" "P ) ]"
+			(at 266.7 164.338 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "868ccaf5-7aad-4883-aeb5-6db9fc329a23")
+		)
+		(pin "1"
+			(uuid "b8ce51ab-eded-4f95-a069-e852804046ae")
+		)
+		(instances
+			(project "wow_communicator"
+				(path "/99202413-db31-4104-a376-6ecb768b1972/ea4e9145-65ec-4b68-b48a-8fe9ba7ca003"
+					(reference "SW209")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Simulation_SPICE:0")
-		(at 73.66 101.6 0)
+		(at 165.1 36.83 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2914,7 +9053,7 @@
 		(dnp no)
 		(uuid "c5131630-1be4-401b-8458-00590b5663bc")
 		(property "Reference" "#GND01"
-			(at 73.66 106.68 0)
+			(at 165.1 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2923,7 +9062,7 @@
 			)
 		)
 		(property "Value" "0"
-			(at 73.66 104.14 0)
+			(at 165.1 34.29 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2931,7 +9070,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 73.66 101.6 0)
+			(at 165.1 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2940,7 +9079,7 @@
 			)
 		)
 		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#subsec_Circuit_elements__device"
-			(at 73.66 111.76 0)
+			(at 165.1 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2949,7 +9088,7 @@
 			)
 		)
 		(property "Description" "0V reference potential for simulation"
-			(at 73.66 109.22 0)
+			(at 165.1 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2964,6 +9103,1029 @@
 			(project ""
 				(path "/99202413-db31-4104-a376-6ecb768b1972/ea4e9145-65ec-4b68-b48a-8fe9ba7ca003"
 					(reference "#GND01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_SPST")
+		(at 326.39 194.31 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "cc82c762-cad7-4374-9b6a-f733b966d68e")
+		(property "Reference" "SW226"
+			(at 326.39 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_SPST"
+			(at 326.39 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_SMD:SW_Tactile_SPST_NO_Straight_CK_PTS636Sx25SMTRLFS"
+			(at 326.39 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "datasheet/pts636.pdf"
+			(at 326.39 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SW SPST 6x3.5mm"
+			(at 326.39 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "C&K"
+			(at 326.39 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "PTS636SMG25JSMTR LFS"
+			(at 326.39 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Key Text" "Space"
+			(at 326.39 196.088 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "a06926f5-cdd7-4dc9-87e9-e8ce1baa56fc")
+		)
+		(pin "1"
+			(uuid "566ca560-7f70-4c56-afc2-2c2bbc42499b")
+		)
+		(instances
+			(project "wow_communicator"
+				(path "/99202413-db31-4104-a376-6ecb768b1972/ea4e9145-65ec-4b68-b48a-8fe9ba7ca003"
+					(reference "SW226")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_SPST")
+		(at 266.7 226.06 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "cf6f4bec-676c-4606-b80e-fd85be92541d")
+		(property "Reference" "SW237"
+			(at 266.7 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_SPST"
+			(at 266.7 222.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_SMD:SW_Tactile_SPST_NO_Straight_CK_PTS636Sx25SMTRLFS"
+			(at 266.7 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "datasheet/pts636.pdf"
+			(at 266.7 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SW SPST 6x3.5mm"
+			(at 266.7 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "C&K"
+			(at 266.7 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "PTS636SMG25JSMTR LFS"
+			(at 266.7 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Key Text" "Mod 2"
+			(at 266.7 227.838 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "acdfcd1d-6765-4620-9382-34957ba6c3da")
+		)
+		(pin "1"
+			(uuid "619f04fb-ff48-45a1-adcc-85c52d5e68ee")
+		)
+		(instances
+			(project "wow_communicator"
+				(path "/99202413-db31-4104-a376-6ecb768b1972/ea4e9145-65ec-4b68-b48a-8fe9ba7ca003"
+					(reference "SW237")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_SPST")
+		(at 307.34 209.55 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d02ec347-2e22-4a3e-adda-f65f36a16251")
+		(property "Reference" "SW232"
+			(at 307.34 203.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_SPST"
+			(at 307.34 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_SMD:SW_Tactile_SPST_NO_Straight_CK_PTS636Sx25SMTRLFS"
+			(at 307.34 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "datasheet/pts636.pdf"
+			(at 307.34 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SW SPST 6x3.5mm"
+			(at 307.34 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "C&K"
+			(at 307.34 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "PTS636SMG25JSMTR LFS"
+			(at 307.34 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Key Text" "↑"
+			(at 307.34 211.328 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "643f1f52-6174-4d18-a6a0-86853a4e1987")
+		)
+		(pin "1"
+			(uuid "277bd89c-8493-4ae8-b3a2-219aeb9a4832")
+		)
+		(instances
+			(project "wow_communicator"
+				(path "/99202413-db31-4104-a376-6ecb768b1972/ea4e9145-65ec-4b68-b48a-8fe9ba7ca003"
+					(reference "SW232")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_SPST")
+		(at 326.39 226.06 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d248e29e-5ab9-40a9-8d11-2b9ed5eea410")
+		(property "Reference" "SW240"
+			(at 326.39 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_SPST"
+			(at 326.39 222.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_SMD:SW_Tactile_SPST_NO_Straight_CK_PTS636Sx25SMTRLFS"
+			(at 326.39 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "datasheet/pts636.pdf"
+			(at 326.39 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SW SPST 6x3.5mm"
+			(at 326.39 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "C&K"
+			(at 326.39 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "PTS636SMG25JSMTR LFS"
+			(at 326.39 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Key Text" "Sel"
+			(at 326.39 227.838 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "c439677f-b06c-4093-ab5b-fda8681e0444")
+		)
+		(pin "1"
+			(uuid "fcefb9ae-ab70-48f5-bd54-6e8344cb2166")
+		)
+		(instances
+			(project "wow_communicator"
+				(path "/99202413-db31-4104-a376-6ecb768b1972/ea4e9145-65ec-4b68-b48a-8fe9ba7ca003"
+					(reference "SW240")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_SPST")
+		(at 246.38 209.55 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d58064da-49bc-4fba-939c-a287cff73ccc")
+		(property "Reference" "SW229"
+			(at 246.38 203.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_SPST"
+			(at 246.38 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_SMD:SW_Tactile_SPST_NO_Straight_CK_PTS636Sx25SMTRLFS"
+			(at 246.38 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "datasheet/pts636.pdf"
+			(at 246.38 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SW SPST 6x3.5mm"
+			(at 246.38 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "C&K"
+			(at 246.38 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "PTS636SMG25JSMTR LFS"
+			(at 246.38 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Key Text" ", < ?"
+			(at 246.38 211.328 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "1a613686-8f53-4f2d-9ece-550be46d4111")
+		)
+		(pin "1"
+			(uuid "0133c6ed-6355-4d69-8c96-79a5c9590692")
+		)
+		(instances
+			(project "wow_communicator"
+				(path "/99202413-db31-4104-a376-6ecb768b1972/ea4e9145-65ec-4b68-b48a-8fe9ba7ca003"
+					(reference "SW229")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_SPST")
+		(at 246.38 146.05 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "da7c5782-62fa-4e2a-9b9d-6af81b18be4d")
+		(property "Reference" "SW201"
+			(at 246.38 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_SPST"
+			(at 246.38 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_SMD:SW_Tactile_SPST_NO_Straight_CK_PTS636Sx25SMTRLFS"
+			(at 246.38 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "datasheet/pts636.pdf"
+			(at 246.38 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SW SPST 6x3.5mm"
+			(at 246.38 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "C&K"
+			(at 246.38 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "PTS636SMG25JSMTR LFS"
+			(at 246.38 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Key Text" "E #"
+			(at 246.38 147.828 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "9ae11b32-4aa3-4105-9298-15a3735defa0")
+		)
+		(pin "1"
+			(uuid "54e58854-9e62-4991-a70f-d3c51604c96b")
+		)
+		(instances
+			(project "wow_communicator"
+				(path "/99202413-db31-4104-a376-6ecb768b1972/ea4e9145-65ec-4b68-b48a-8fe9ba7ca003"
+					(reference "SW201")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_SPST")
+		(at 287.02 209.55 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "de29b6ff-1599-4826-a09e-7553e1cecd03")
+		(property "Reference" "SW231"
+			(at 287.02 203.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_SPST"
+			(at 287.02 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_SMD:SW_Tactile_SPST_NO_Straight_CK_PTS636Sx25SMTRLFS"
+			(at 287.02 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "datasheet/pts636.pdf"
+			(at 287.02 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SW SPST 6x3.5mm"
+			(at 287.02 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "C&K"
+			(at 287.02 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "PTS636SMG25JSMTR LFS"
+			(at 287.02 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Key Text" "←"
+			(at 287.02 211.328 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "2e6774b2-ac10-4573-be7e-b5cce4c429b2")
+		)
+		(pin "1"
+			(uuid "967369af-6547-4118-80a7-80d2e4648b23")
+		)
+		(instances
+			(project "wow_communicator"
+				(path "/99202413-db31-4104-a376-6ecb768b1972/ea4e9145-65ec-4b68-b48a-8fe9ba7ca003"
+					(reference "SW231")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_SPST")
+		(at 204.47 177.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e7cb4448-725e-49bb-84e8-bfebd1043bc1")
+		(property "Reference" "SW213"
+			(at 204.47 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_SPST"
+			(at 204.47 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_SMD:SW_Tactile_SPST_NO_Straight_CK_PTS636Sx25SMTRLFS"
+			(at 204.47 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "datasheet/pts636.pdf"
+			(at 204.47 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SW SPST 6x3.5mm"
+			(at 204.47 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "C&K"
+			(at 204.47 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "PTS636SMG25JSMTR LFS"
+			(at 204.47 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Key Text" "D 3 ~"
+			(at 204.47 179.578 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "f0fa9573-4ea7-44a8-b778-9874f8984c95")
+		)
+		(pin "1"
+			(uuid "ab334119-3156-47dd-a36a-af0c21239f4e")
+		)
+		(instances
+			(project "wow_communicator"
+				(path "/99202413-db31-4104-a376-6ecb768b1972/ea4e9145-65ec-4b68-b48a-8fe9ba7ca003"
+					(reference "SW213")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_SPST")
+		(at 224.79 209.55 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ea67c5eb-29b8-4406-b674-aa324d1d3dba")
+		(property "Reference" "SW228"
+			(at 224.79 203.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_SPST"
+			(at 224.79 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_SMD:SW_Tactile_SPST_NO_Straight_CK_PTS636Sx25SMTRLFS"
+			(at 224.79 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "datasheet/pts636.pdf"
+			(at 224.79 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SW SPST 6x3.5mm"
+			(at 224.79 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "C&K"
+			(at 224.79 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "PTS636SMG25JSMTR LFS"
+			(at 224.79 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Key Text" "M"
+			(at 224.79 211.328 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "6ba416a6-82ff-4baf-b758-998867845bbe")
+		)
+		(pin "1"
+			(uuid "0dd2c969-d99f-4ab3-abf5-aa681e005574")
+		)
+		(instances
+			(project "wow_communicator"
+				(path "/99202413-db31-4104-a376-6ecb768b1972/ea4e9145-65ec-4b68-b48a-8fe9ba7ca003"
+					(reference "SW228")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_SPST")
+		(at 224.79 162.56 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f522b1a1-1c7c-444b-918f-9e46aaeb1604")
+		(property "Reference" "SW207"
+			(at 224.79 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_SPST"
+			(at 224.79 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_SMD:SW_Tactile_SPST_NO_Straight_CK_PTS636Sx25SMTRLFS"
+			(at 224.79 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "datasheet/pts636.pdf"
+			(at 224.79 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SW SPST 6x3.5mm"
+			(at 224.79 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "C&K"
+			(at 224.79 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "PTS636SMG25JSMTR LFS"
+			(at 224.79 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Key Text" "I * ["
+			(at 224.79 164.338 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "fe5eebf2-8ca9-498a-bd76-62cb2576a062")
+		)
+		(pin "1"
+			(uuid "610aa8c1-ada4-4695-9456-8079895d2f86")
+		)
+		(instances
+			(project "wow_communicator"
+				(path "/99202413-db31-4104-a376-6ecb768b1972/ea4e9145-65ec-4b68-b48a-8fe9ba7ca003"
+					(reference "SW207")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_SPST")
+		(at 326.39 162.56 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "fa99b849-f2ca-4c29-acb4-a546d964b86a")
+		(property "Reference" "SW212"
+			(at 326.39 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_SPST"
+			(at 326.39 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_SMD:SW_Tactile_SPST_NO_Straight_CK_PTS636Sx25SMTRLFS"
+			(at 326.39 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "datasheet/pts636.pdf"
+			(at 326.39 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SW SPST 6x3.5mm"
+			(at 326.39 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "C&K"
+			(at 326.39 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "PTS636SMG25JSMTR LFS"
+			(at 326.39 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Key Text" "Backspace"
+			(at 326.39 164.338 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "e8ba3975-f5eb-4451-a773-1433f06afa59")
+		)
+		(pin "1"
+			(uuid "f78109de-bba1-461d-a7fc-8f2bb71b5a23")
+		)
+		(instances
+			(project "wow_communicator"
+				(path "/99202413-db31-4104-a376-6ecb768b1972/ea4e9145-65ec-4b68-b48a-8fe9ba7ca003"
+					(reference "SW212")
 					(unit 1)
 				)
 			)
