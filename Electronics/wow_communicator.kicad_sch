@@ -1,0 +1,56 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "99202413-db31-4104-a376-6ecb768b1972")
+	(paper "A4")
+	(lib_symbols)
+	(sheet
+		(at 148.59 86.36)
+		(size 33.02 31.75)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "ea4e9145-65ec-4b68-b48a-8fe9ba7ca003")
+		(property "Sheetname" "keyboard_matrix"
+			(at 148.59 85.6484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "keyboard_matrix.kicad_sch"
+			(at 148.59 118.6946 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "wow_communicator"
+				(path "/99202413-db31-4104-a376-6ecb768b1972"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
