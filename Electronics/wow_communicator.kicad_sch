@@ -1061,6 +1061,46 @@
 				(justify left top)
 			)
 		)
+		(pin "USB_DP" input
+			(at 213.36 81.28 180)
+			(uuid "cfff562b-dcc9-469c-993a-f90c120a103f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "USB_DM" input
+			(at 213.36 78.74 180)
+			(uuid "bf4e8985-bbfd-49b2-90fb-3c251a341841")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "BATTERY_SDA" input
+			(at 213.36 69.85 180)
+			(uuid "6a63f1fd-c90d-4b33-9e58-b0298f87fb17")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "BATTERY_SCL" input
+			(at 213.36 72.39 180)
+			(uuid "15aa2353-723a-40d4-864b-3a3b5c433e66")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(instances
 			(project "wow_communicator"
 				(path "/99202413-db31-4104-a376-6ecb768b1972"

@@ -22,4 +22,5 @@ The NRST pin was pinned out as suggested below:
 The switches selected were the [[pts636.pdf#page=1&selection=13,0,13,13&color=yellow|PTS636 Series]]
 
 ## Keyboard Matrix 
+The keyboard matrix was arranged as a 7x6 matrix for maximum keycount whilst maintaining debug interfaces and communication interfaces for the host microcontroller. 
 

@@ -6860,7 +6860,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "4358e501-e1fd-4dba-84e8-ac6f02a8e6d8")
 		(property "Reference" "SW41"
 			(at 307.34 219.71 0)
