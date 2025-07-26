@@ -3729,7 +3729,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/22036b.pdf"
+		(property "Datasheet" "datasheet/22036b.pdf"
 			(at 110.49 74.93 0)
 			(effects
 				(font
@@ -4108,22 +4108,22 @@
 			)
 		)
 		(pin "1"
-			(uuid "0a9b89b5-b9ed-4460-895d-7b48bb0aa67e")
+			(uuid "0a9b89b5-b9ed-4460-895d-7b48bb0aa67f")
 		)
 		(pin "2"
-			(uuid "7ca07691-bcc1-442b-9f69-54a9a6b0f139")
+			(uuid "7ca07691-bcc1-442b-9f69-54a9a6b0f13a")
 		)
 		(pin "4"
-			(uuid "988ecac7-931a-423b-a5ae-8f13d88ef88f")
+			(uuid "988ecac7-931a-423b-a5ae-8f13d88ef890")
 		)
 		(pin "5"
-			(uuid "8b0513e8-0a35-4259-8bda-d520abcbc1d0")
+			(uuid "8b0513e8-0a35-4259-8bda-d520abcbc1d1")
 		)
 		(pin "6"
-			(uuid "3bd2818a-fa00-4cf8-b545-51e75c521eef")
+			(uuid "3bd2818a-fa00-4cf8-b545-51e75c521ef0")
 		)
 		(pin "3"
-			(uuid "c041a8c7-b3d9-4e91-9406-cc1c0d6d2ca8")
+			(uuid "c041a8c7-b3d9-4e91-9406-cc1c0d6d2ca9")
 		)
 		(instances
 			(project ""

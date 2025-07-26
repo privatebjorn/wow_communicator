@@ -1,0 +1,114 @@
+(footprint "ER-TFT035IPS-6"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at -0.08 -0.22 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "0ed1dd06-3f5b-4f8d-813a-0e896b2d5f44")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "ER-TFT035IPS-6"
+		(at -0.6 1.9 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "4a7e27ca-f9d1-4d7b-a82d-e0f8a321f43e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at -41.5 -27.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "29b1d1f3-32b0-4b16-8621-1feebe33d43e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at -41.5 -27.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "bd6dff4a-cbc0-47cc-bb58-2fb5b809d9a1")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_rect
+		(start -41.5 27.06)
+		(end 41.34 -27.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "418c3e04-0279-42fb-b322-5cfb6c31e467")
+	)
+	(fp_rect
+		(start -39.2 -24.7)
+		(end 34.24 24.26)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "efc18421-9198-44dd-a7c0-440f949f4c5e")
+	)
+	(fp_rect
+		(start 41.5 -11.25)
+		(end 71.5 11.25)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "User.1")
+		(uuid "c8a30276-9948-48fe-89fb-dcda3a3de0be")
+	)
+	(fp_text user "${REFERENCE}"
+		(at -0.6 3.4 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "b4ee3770-c264-43a3-9d36-6b927c718dab")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/library/ER-TFT035-6.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 -90)
+		)
+	)
+)

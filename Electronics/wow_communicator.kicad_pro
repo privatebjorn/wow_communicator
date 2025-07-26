@@ -620,6 +620,10 @@
     [
       "81e56805-f1f4-482b-8f2c-9e3590731cf0",
       "power_management"
+    ],
+    [
+      "409edc36-f068-4c15-bc68-a1ebae2331c5",
+      "lcd"
     ]
   ],
   "text_variables": {}
